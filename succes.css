@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 40px;
+}
+
+
+
+.part1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.part1 h1{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+part1 h3{
+    font-size: 9px;
+}
+
+form {
+    width: 250px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+
+}
+
+label{
+    display: block;
+    /* padding: 5px; */
+    margin-bottom: 10p;
+    border: 1 px solid #ddd;
+    border-radius: 8px;
+}
+
+/* LAA BANDE hr */
+hr{
+    color: rgb(241, 188, 197);
+}
+
+button {
+    
+    width: 100%;
+    padding: 10px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 12px;
+    background-color:rgb(241, 188, 197) ;
+    color: white;
+    transition: 0.3s;
+}
+
+
+label:hover{
+    background-color: #f2f2f2;
+    border-color: #d3a0a0;
+    cursor: pointer;
+
+}
+
+button:hover{
+    background-color: #444;
+}
+
+input[type="radio"]{
+    margin-right: 10px;
+}
+
+
+

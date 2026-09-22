@@ -1,0 +1,761 @@
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Qwitcher+Grypen:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* STYLE DU BODY */
+body {
+    /* Police d'écriture */
+    font-family: 'Georgia', serif;
+    
+    /* Couleur du texte */
+    color: #333;
+    
+    /* Couleur de fond */
+    background-color: #f394bf;
+    
+    /* Hauteur de ligne */
+    line-height: 1.6;
+}
+
+/* ===== PARTIE 1 - HEADER ===== */
+
+/* SECTION PARTIE 1 (Header) */
+section.partie1 {
+    /* Couleur de fond noir */
+    background-color: #0f0f0f;
+    
+    /* Espacement intérieur */
+    padding: 15px 40px;
+    
+    /* Position sticky */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    
+    /* Ombre pour séparation */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    
+    /* Affichage flex */
+    display: flex;
+    
+    /* Aligner verticalement */
+    align-items: center;
+    
+    /* Espace entre logo et nav */
+    justify-content: space-between;
+}
+
+/* LOGO - TITRE h2 */
+section.partie1 h2 {
+    /* Couleur rose/rose clair */
+    color: #ff6b9d;
+    
+    /* Taille grande */
+    font-size: 30px;
+    
+    /* Poids */
+    font-weight: lighter;
+    
+    /* Espacement */
+    margin-right: 30px;
+}
+
+/* SOUS-TITRE h5 (tagline) */
+section.partie1 h5 {
+    /* Couleur grise */
+    color:#ff6b9d;
+    
+    /* Taille petite */
+    font-size: 11px;
+    
+    /* Lettres majuscules */
+    text-transform: uppercase;
+    
+    /* Espacement entre lettres */
+    letter-spacing: 2px;
+}
+
+/* NAVIGATION */
+nav {
+    /* Affichage flex */
+    display: flex;
+    
+    /* Aligner au centre */
+    align-items: center;
+    
+    /* Espace entre éléments */
+    gap: 40px;
+}
+
+/* LISTE DE NAVIGATION */
+nav ul {
+    /* Affichage en ligne */
+    display: flex;
+    
+    /* Aligner verticalement */
+    align-items: center;
+    
+    /* Enlever les puces */
+    list-style: none;
+    
+    /* Espace entre les liens */
+    gap: 30px;
+}
+
+/* LIENS DE NAVIGATION */
+nav a {
+    /* Couleur blanche */
+    color: white;
+    
+    /* Enlever la décoration */
+    text-decoration: none;
+    
+    /* Taille */
+    font-size: 15px;
+    
+    /* Transition smooth */
+    transition: color 0.3s ease;
+}
+
+/* EFFET HOVER SUR LES LIENS */
+nav a:hover {
+    /* Couleur rose */
+    color: #ff6b9d;
+}
+
+
+.exclu{
+    text-align: center ;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.exclu h5{
+    color: rgb(241, 230, 230);
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+/* Je dois agrandir apres  */
+.exclu h3{
+    font-family: "Mea Culpa", cursive;
+    font-weight:1000;
+}
+
+/* SECTION PARTIE 2 (Hero/Carrousel) */
+/* NOTE : le HTML a changé, <main> englobe maintenant la section, donc tous
+   les styles qui visaient "section.partie2 main" visent directement "section.partie2" */
+section.partie2 {
+    /* Image de fond sombre */
+    background: linear-gradient(135deg, rgba(71, 54, 54, 0.7) 0%, rgba(20, 10, 20, 0.7) 100%), 
+                url('image/BOOKS.jpeg') center/cover no-repeat;
+    
+    /* Hauteur */
+    min-height: 600px;
+    
+    /* Affichage flex EN COLONNE : tous les textes (p, h1, p, p, a) sont
+       des enfants directs, il faut donc les empiler verticalement */
+    display: flex;
+    flex-direction: column;
+    
+    /* Centrer le bloc de texte verticalement dans la section */
+    justify-content: center;
+    
+    /* Aligner le texte à gauche (pas au centre) */
+    align-items: flex-start;
+    
+    /* Padding */
+    padding: 60px 50px;
+    
+    /* Position relative pour les flèches */
+    position: relative;
+    
+    /* Couleur texte blanc par défaut */
+    color: white;
+    
+    /* Z-index */
+    z-index: 10;
+
+    /* PAS de max-width ici : ça limiterait aussi l'image de fond ! */
+}
+
+/* On limite la largeur du TEXTE seulement, pas de la section entière */
+section.partie2 > * {
+    max-width: 600px;
+}
+
+/* PARAGRAPHES TEXTE GRIS (le tout premier paragraphe) */
+section.partie2 p:first-child {
+    /* Couleur grise claire */
+    color: #ccc;
+    
+    /* Taille petite */
+    font-size: 12px;
+    
+    /* Majuscules */
+    text-transform: uppercase;
+    
+    /* Espacement */
+    margin-bottom: 15px;
+    
+    /* Espacement entre lettres */
+    letter-spacing: 1px;
+}
+
+/* TITRE PRINCIPAL h1 */
+section.partie2 h1 {
+    /* Taille très grande */
+    font-size: 56px;
+    
+    /* Poids */
+    font-weight: bold;
+    
+    /* Espacement */
+    margin: 20px 0;
+    
+    /* Hauteur de ligne */
+    line-height: 1.1;
+    
+    /* Font serif */
+    font-family: 'Georgia', serif;
+}
+
+/* STRONG DANS h1 (mot "intenses") */
+section.partie2 h1 strong {
+    /* Couleur rose */
+    color: #ff6b9d;
+	font-family: "Monsieur La Doulaise", cursive;
+	font-weight: 600;
+    font-style: normal;
+    
+    /* Style italique */
+    font-style: italic;
+}
+
+/* PARAGRAPHES DESCRIPTIFS */
+section.partie2 p {
+    /* Couleur grise */
+    color: #bbb;
+    
+    /* Taille */
+    font-size: 14px;
+    
+    /* Espacement */
+    margin-bottom: 15px;
+}
+
+/* BOUTON "Découvrir la boutique" (h5) */
+section.partie2 h5 {
+    /* Couleur rose */
+    color: white;
+    
+    /* Fond rose */
+    background-color: #ff6b9d;
+    
+    /* Padding */
+    padding: 12px 30px;
+    
+    /* Affichage inline-block */
+    display: inline-block;
+    
+    /* Espacement */
+    margin-top: 30px;
+    
+    /* Coins très arrondis */
+    border-radius: 25px;
+    
+    /* Cursor pointer */
+    cursor: pointer;
+    
+    /* Transition */
+    transition: all 0.3s ease;
+    
+    /* Font size */
+    font-size: 14px;
+    
+    /* Border */
+    border: none;
+}
+
+/* SURVOL DU BOUTON */
+section.partie2 h5:hover {
+    /* Couleur plus foncée */
+    background-color: #e55a8a;
+    
+    /* Ombre */
+    box-shadow: 0 5px 15px rgba(255, 107, 157, 0.4);
+}
+
+/* ===== CATÉGORIES (ICÔNES) ===== */
+
+/* SECTION IMAGE (Grille de livres) */
+section.image {
+    /* Largeur maximale */
+    max-width: 1200px;
+    
+    /* Centrer */
+    margin: 0 auto;
+    
+    /* Affichage en grille */
+    display: grid;
+    
+    /* 3 colonnes pour plus d'espace */
+    grid-template-columns: repeat(3, 1fr);
+    
+    /* Espace entre les colonnes et lignes (augmenté) */
+    gap: 35px;
+    
+    /* Padding (un peu plus en haut aussi) */
+    padding: 40px 50px 60px 50px;
+}
+
+/* CHAQUE LIVRE */
+div.livre {
+    /* Fond noir */
+    background-color: #131010;
+    
+    /* Border */
+    border: 1px solid #333333;
+    
+    /* Coins arrondis */
+    border-radius: 5px;
+    
+    /* Overflow hidden */
+    overflow: hidden;
+    
+    /* Transition */
+    transition: all 0.3s ease;
+}
+
+
+/* SURVOL DES LIVRES */
+div.livre:hover {
+    /* Ombre rose */
+    box-shadow: 0 8px 20px rgba(255, 107, 157, 0.2);
+    
+    /* Montée légère */
+    transform: translateY(-8px);
+}
+
+/* IMAGES DES LIVRES */
+div.livre img {
+    /* Largeur 100% */
+    width: 100%;
+    
+    /* Hauteur auto */
+    height: auto;
+    
+    /* Rapport d'aspect pour couvertures livres */
+    aspect-ratio: 3 / 4;
+    
+    /* Remplir le conteneur */
+    object-fit: cover;
+    
+    /* Display block */
+    display: block;
+}
+
+/* CONTENU TEXTE LIVRE */
+div.livre p {
+    /* Espacement */
+    padding: 18px 15px;
+    
+    /* Taille */
+    font-size: 12px;
+    
+    /* Couleur grise */
+    color: #ccc;
+    
+    /* Centrer */
+    text-align: center;
+    
+    /* Hauteur minimale */
+    min-height: 40px;
+}
+
+/* PRIX (span) */
+div.livre span {
+    /* Affichage block */
+    display: block;
+    
+    /* Couleur rose */
+    color: #ff6b9d;
+    
+    /* Poids */
+    font-weight: bold;
+    
+    /* Taille */
+    font-size: 14px;
+    
+    /* Espacement */
+    padding: 8px 10px;
+    
+    /* Centrer */
+    text-align: center;
+}
+
+/* BOUTON "Ajouter au panier" (h3) */
+div.livre h3 {
+    /* Couleur blanc */
+    color: white;
+    
+    /* Fond rose */
+    background-color: #ff6b9d;
+    
+    /* Padding */
+    padding: 10px;
+    
+    /* Marge */
+    margin: 10px;
+    
+    /* Coins arrondis */
+    border-radius: 20px;
+    
+    /* Taille */
+    font-size: 12px;
+    
+    /* Cursor */
+    cursor: pointer;
+    
+    /* Transition */
+    transition: background-color 0.3s ease;
+    
+    /* Text align center */
+    text-align: center;
+    
+    /* Border */
+    border: none;
+}
+
+.livre h3 a {
+    text-decoration: none;
+    color: white;
+}
+
+/* SURVOL BOUTON AJOUTER AU PANIER */
+div.livre h3:hover {
+    /* Couleur plus foncée */
+    background-color: #e55a8a;
+}
+
+
+/* SECTION AVIS CLIENTS */
+.avis-clients {
+    padding: 60px 20px;
+    /* background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%); */
+    text-align: center;
+    margin: 40px 0;
+}
+
+.avis-header h3 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.avis-header p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.avis-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.avis-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.avis-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.stars {
+    font-size: 18px;
+    color: #FFD700;
+    margin-bottom: 15px;
+}
+
+.avis-texte {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.avis-auteur {
+    font-weight: bold;
+    color: #333;
+    font-size: 14px;
+}
+
+
+
+/*RESPONSIVE*/
+
+/* TABLETTE */
+@media (max-width: 1024px) {
+    section.image {
+        /* 2 colonnes */
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .categories {
+        /* 3 colonnes */
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    section.image {
+        /* 2 colonnes */
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .categories {
+        /* 2 colonnes */
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    section.partie2 {
+        /* Padding réduit */
+        padding: 40px 20px;
+    }
+    
+    section.partie2 h1 {
+        /* Taille réduite */
+        font-size: 36px;
+    }
+    
+    section.partie1 {
+        /* Padding réduit */
+        padding: 15px 20px;
+    }
+}
+
+/* TRÈS PETIT ÉCRAN */
+@media (max-width: 480px) {
+    section.image {
+        /* 1 colonne */
+        grid-template-columns: 1fr;
+    }
+    
+    .categories {
+        /* 1 colonne */
+        grid-template-columns: 1fr;
+    }
+    
+    section.partie2 h1 {
+        /* Taille petite */
+        font-size: 24px;
+    }
+}
+
+/* ===== FOOTER ===== */
+
+/* FOOTER */
+footer {
+    /* Fond très noir */
+    background-color: #0f0f0f;
+    
+    /* Couleur texte blanc */
+    color: white;
+    
+    /* Padding */
+    padding: 50px;
+    
+    /* Marge top */
+    margin-top: 60px;
+}
+
+/* SECTION SERVICE FOOTER */
+section.servive {
+    /* Affichage grille */
+    display: grid;
+    
+    /* 4 colonnes */
+    grid-template-columns: repeat(4, 1fr);
+    
+    /* Gap entre les colonnes */
+    gap: 30px;
+    
+    /* Largeur maximale */
+    max-width: 1200px;
+    
+    /* Centrer */
+    margin: 0 auto 40px auto;
+}
+
+/* DIVS FOOTER (Service cards) */
+div.footer1,
+div.footer2,
+div.footer3 {
+    /* Padding */
+    padding: 25px;
+    
+    /* Border radius */
+    border-radius: 8px;
+    
+    /* Transition */
+    transition: all 0.3s ease;
+    
+    /* Affichage flex */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* HOVER DES CARDS FOOTER */
+div.footer1:hover,
+div.footer2:hover,
+div.footer3:hover {
+    /* Ombre rose */
+    box-shadow: 0 8px 20px rgba(255, 107, 157, 0.2);
+    
+    /* Montée */
+    transform: translateY(-5px);
+}
+
+/* PARAGRAPHES FOOTER */
+div.footer1 p,
+div.footer2 p,
+div.footer3 p {
+    /* Couleur white */
+    color: white;
+    
+    /* Font size */
+    font-size: 14px;
+    
+    /* Poids bold */
+    font-weight: bold;
+    
+    /* Margin bottom */
+    margin-bottom: 8px;
+    
+    /* Text align */
+    text-align: center;
+}
+
+/* h6 DANS FOOTER */
+div.footer1 h6,
+div.footer2 h6,
+div.footer3 h6 {
+    /* Couleur rose */
+    color: #ff6b9d;
+    
+    /* Font size petite */
+    font-size: 12px;
+    
+    /* Text align */
+    text-align: center;
+}
+
+/* PARAGRAPHES PRINCIPAUX FOOTER */
+footer > p {
+    /* Couleur grise */
+    color: #ff6b9d;
+    
+    /* Margin */
+    margin: 30px 0;
+    
+    /* Font size */
+    font-size: 13px;
+    
+    /* Italique */
+    font-style: italic;
+    
+    /* Text align */
+    text-align: center;
+}
+
+/* IMAGE FOOTER (cœur) */
+footer img {
+    /* Width */
+    width: 100px;
+    
+    /* Height auto */
+    height: auto;
+    
+    /* Margin */
+    margin: 20px 0;
+    
+    /* Display block */
+    display: block;
+    
+    /* Margin auto */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* COPYRIGHT */
+footer > p:last-child {
+    /* Border top */
+    border-top: 1px solid #333;
+    
+    /* Padding top */
+    padding-top: 20px;
+    
+    /* Couleur grise clair */
+    color: #666666;
+    
+    /* Font size */
+    font-size: 11px;
+}
+
+/* RESPONSIVE FOOTER */
+@media (max-width: 1024px) {
+    section.servive {
+        /* 2 colonnes */
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    section.servive {
+        /* 1 colonne */
+        grid-template-columns: 1fr;
+    }
+    
+    footer {
+        /* Padding réduit */
+        padding: 30px 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.cta-button {
+    display: inline-block;
+    background: white;
+    color: #FF69B4;
+    padding: 5px 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}

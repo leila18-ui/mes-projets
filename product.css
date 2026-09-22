@@ -1,0 +1,343 @@
+/* On enlève les marges par défaut du navigateur */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+section.partie1 {
+    /* Couleur de fond noir */
+    background-color:black;
+    
+    /* Espacement intérieur */
+    padding: 15px 40px;
+    
+    /* Position sticky */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    
+    /* Ombre pour séparation */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    
+    /* Affichage flex */
+    display: flex;
+    
+    /* Aligner verticalement */
+    align-items: center;
+    
+    /* Espace entre logo et nav */
+    justify-content: space-between;
+}
+
+/* LOGO - TITRE h4 */
+section.partie1 h4 {
+    /* Couleur rose/rose clair */
+    color:#ff6b9d;
+    
+    /* Taille grande */
+    font-size: 30px;
+    
+    /* Poids */
+    font-weight: lighter;
+    
+    /* Espacement */
+    margin-right: 30px;
+}
+
+.partie1 h4 a {
+    text-decoration:none;
+    color:#ff6b9d;
+    
+}
+
+/* SOUS-TITRE h5 (tagline) */
+section.partie1 h5 {
+    /* Couleur grise */
+    color:#ff6b9d;
+    
+    /* Taille petite */
+    font-size: 11px;
+    
+    /* Lettres majuscules */
+    text-transform: uppercase;
+    
+    /* Espacement entre lettres */
+    letter-spacing: 2px;
+}
+
+/* NAVIGATION */
+nav {
+    /* Affichage flex */
+    display: flex;
+    
+    /* Aligner au centre */
+    align-items: center;
+    
+    /* Espace entre éléments */
+    gap: 40px;
+}
+
+/* LISTE DE NAVIGATION */
+nav ul {
+    /* Affichage en ligne */
+    display: flex;
+    
+    /* Aligner verticalement */
+    align-items: center;
+    
+    /* Enlever les puces */
+    list-style: none;
+    
+    /* Espace entre les liens */
+    gap: 30px;
+}
+
+/* LIENS DE NAVIGATION */
+nav a {
+    /* Couleur blanche */
+    color: white;
+    
+    /* Enlever la décoration */
+    text-decoration: none;
+    
+    /* Taille */
+    font-size: 15px;
+    
+    /* Transition smooth */
+    transition: color 0.3s ease;
+}
+
+/* EFFET HOVER SUR LES LIENS */
+nav a:hover {
+    /* Couleur rose */
+    color: #ff6b9d;
+}
+
+
+/* Style général de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    color: #222;
+}
+
+
+.product-page {
+    scroll-margin-top: 100px; /* évite que le header sticky cache le haut du bloc visé */
+    padding-bottom: 40px;
+    border-bottom: 2px dashed #ffd1df;
+}
+
+.product-page:last-of-type {
+    border-bottom: none;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 50px auto;
+
+    /* Couleur du bloc */
+    background: linear-gradient(135deg, #ffffff, #fff0f5);
+
+    padding: 40px;
+    border-radius: 20px;
+
+    /* Ombre */
+    box-shadow: 0 10px 30px rgba(255, 107, 157, 0.15);
+
+    /* Petite bordure rose */
+    border: 1px solid #ffd1df;
+}
+
+.product-image img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+
+    /* Coins légèrement arrondis */
+    border-radius: 10px;
+
+    /* Ombre autour de la couverture */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+    /* Petite bordure rose */
+    border: 3px solid #ffd1df;
+
+    /* Animation au survol */
+    transition: transform 0.3s ease;
+}
+
+.product-image img:hover {
+    transform: scale(1.03);
+}
+
+
+.product-info {
+    flex: 1;
+}
+
+
+.product-info h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+
+    /* Couleur du titre */
+    color: #222;
+
+    /* Écriture plus élégante */
+    letter-spacing: 2px;
+}
+
+
+.author {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+
+.price {
+    font-size: 18px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+
+    /* Le prix ressort en rose */
+    color: #d2a7b5;
+}
+
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.quantity button {
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ccc;
+    background-color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.quantity span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* BOUTON "Ajouter au panier" — réécrit proprement,
+   l'ancienne règle avait plusieurs couleurs collées dans
+   un commentaire mal fermé qui cassait le CSS. */
+.add-cart {
+    padding: 14px 30px;
+    border: none;
+    background-color: #ff6b9d;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(255, 107, 157, 0.3);
+    transition: all 0.3s ease;
+}
+
+.add-cart:hover {
+    background-color: #222;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Section description (fusionnée : il y avait deux règles .details
+   qui s'écrasaient l'une l'autre, gardé la version avec bordure rose) */
+.details {
+    max-width: 1000px;
+    margin: 30px auto;
+
+    /* Fond légèrement rosé */
+    background: linear-gradient(135deg, #ffffff, #fff5f8);
+
+    padding: 30px 40px;
+    border-radius: 15px;
+
+    /* Petite bordure */
+    border-left: 5px solid #ff6b9d;
+
+    /* Ombre légère */
+    box-shadow: 0 5px 20px rgba(255, 107, 157, 0.10);
+}
+
+.details h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.details p {
+    line-height: 1.7;
+    color: #555;
+}
+
+
+/* Informations sur le livre */
+.book-info {
+    max-width: 1000px;
+    margin: 30px auto;
+
+    /* Fond légèrement rosé */
+    background: linear-gradient(135deg, #ffffff, #fff5f8);
+
+    padding: 30px 40px;
+    border-radius: 15px;
+
+    /* Petite bordure */
+    border-left: 5px solid #ff6b9d;
+
+    /* Ombre légère */
+    box-shadow: 0 5px 20px rgba(255, 107, 157, 0.10);
+}
+
+.book-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.book-info p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Adaptation pour les petits écrans */
+@media (max-width: 768px) {
+
+    .product {
+        flex-direction: column;
+        margin: 20px;
+        padding: 25px;
+        gap: 30px;
+    }
+
+    .product-image img {
+        width: 220px;
+        height: 300px;
+    }
+
+    .product-info {
+        width: 100%;
+    }
+
+    .product-info h1 {
+        font-size: 28px;
+    }
+
+    .details,
+    .book-info {
+        margin: 20px;
+        padding: 25px;
+    }
+}
