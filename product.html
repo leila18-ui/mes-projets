@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page de Détail du livre</title>
+    <script src="panier.js" defer></script>
+    <script src="product.js" defer></script>
     <link rel="stylesheet" href="product.css">
 </head>
 <body>
@@ -17,7 +19,7 @@
             <ul>
                 <li><a href="about.html">A propos</a></li>
                 <li><a href="products.html">Products</a></li>
-                <li><a href="cart.html">cart</a></li>
+                <li><a href="cart.html" class="panier">🛒<span id="icon-panier"></span></a> </li>
                 <li><a href="checkout.html">Chekout</a></li>
             </ul>
         </nav>
@@ -27,7 +29,7 @@
     <main>
 
         <!-- ===== LIVRE 1 : VENDETTA ===== -->
-        <section class="product-page" id="vendetta">
+        <section class="product-page" id="shatvow">
 
             <section class="product">
                 <div class="product-image">
@@ -37,19 +39,11 @@
                 <div class="product-info">
                     <h1>SHATTERED VOWS</h1>
                     <p class="author">Par : Shain Rose</p>
-                    <p class="price">17 000 FCFA</p>
+                    <p class="price">19 200 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                     Un mariage arrangé pour sauver une ville, un puissant chef de mafia et une attirance impossible à ignorer. Ce qui devait être un simple accord de six mois pourrait rapidement devenir beaucoup plus compliqué.
                     </p>
 
-                    <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
-                    </div>
 
                     <button class="add-cart">Ajouter au panier</button>
                 </div>
@@ -58,12 +52,7 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+                    Pour sauver sa ville, elle accepte d’épouser Sebastian Armanelli, l’un des hommes les plus puissants de la ville et le chef de la mafia italienne. Leur mariage est censé durer seulement six mois, chacun devant jouer son rôle. Mais Sebastian, froid, autoritaire et possessif, est bien différent derrière les portes closes. Alors que leur relation devient de plus en plus intense, les limites entre le contrat et les véritables sentiments commencent à disparaître. Ce qui devait être un arrangement temporaire pourrait finalement bouleverser leur vie bien plus profondément qu’ils ne l’avaient prévu.
                 </p>
             </section>
 
@@ -71,7 +60,7 @@
                 <h2>Informations sur le livre</h2>
                 <p><strong>Auteur :</strong> Shain Rose </p>
                 <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
+                <p><strong>Nombre de pages :</strong> 560</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
             </section>
@@ -89,19 +78,12 @@
                 <div class="product-info">
                     <h1>GOD OF FURY</h1>
                     <p class="author">Par : Rina Kent </p>
-                    <p class="price">15 000 FCFA</p>
+                    <p class="price">15 100 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                        Brandon King pensait pouvoir garder le contrôle de sa vie jusqu'à sa rencontre avec Nikolai Sokolov, un héritier de la mafia aussi dangereux qu'obsessionnel. Entre eux, l'attirance devient rapidement impossible à ignorer.
                     </p>
 
-                    <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
-                    </div>
+                   
 
                     <button class="add-cart">Ajouter au panier</button>
                 </div>
@@ -110,12 +92,7 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+                    Brandon King est un étudiant brillant et un artiste talentueux qui a construit sa vie autour du contrôle, de la discipline et de la distance émotionnelle. Tout change lorsqu'il rencontre Nikolai Sokolov, un héritier de la mafia russe connu pour sa violence et son tempérament imprévisible. Nikolai est tout ce que Brandon cherche à éviter, mais il devient rapidement obsédé par lui. Alors que Nikolai s'immisce peu à peu dans son monde, les barrières que Brandon avait soigneusement construites commencent à tomber. Entre attirance, obsession, secrets et rivalité, leur relation prend une tournure aussi dangereuse qu'inattendue.
                 </p>
             </section>
 
@@ -123,7 +100,7 @@
                 <h2>Informations sur le livre</h2>
                 <p><strong>Auteur :</strong> Rina kent </p>
                 <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
+                <p><strong>Nombre de pages :</strong> 1010</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
             </section>
@@ -141,19 +118,11 @@
                 <div class="product-info">
                     <h1> CORRUPT </h1>
                     <p class="author">Par : Penelope douglas</p>
-                    <p class="price">15 000 FCFA</p>
+                    <p class="price">15 050 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                        Trois ans après avoir envoyé les amis de Michael Crist en prison, Erika pensait pouvoir tourner la page. Mais lorsqu'ils reviennent, les secrets du passé refont surface et Michael est bien décidé à lui faire payer.  
                     </p>
 
-                    <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
-                    </div>
 
                     <button class="add-cart">Ajouter au panier</button>
                 </div>
@@ -162,12 +131,7 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+                    Erika Fane a toujours été fascinée par Michael Crist, le frère aîné de son ancien petit ami. Puissant, mystérieux et intimidant, Michael est aussi l'un des hommes qu'elle aurait préféré ne jamais provoquer. Trois ans plus tôt, Erika a contribué à faire emprisonner ses amis. Maintenant qu'ils sont libres, ils reviennent avec un désir de vengeance. Alors que le frère de Michael part à l'armée, Erika se retrouve seule et sans protection face à lui. Michael connaît ses peurs, ses secrets et l'emprise qu'il exerce sur elle. Entre vengeance, secrets du passé, peur et attirance, Erika découvre que ses anciens cauchemars sont loin d'être terminés.
                 </p>
             </section>
 
@@ -175,7 +139,7 @@
                 <h2>Informations sur le livre</h2>
                 <p><strong>Auteur :</strong> Penelope douglas</p>
                 <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
+                <p><strong>Nombre de pages :</strong> 601</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
             </section>
@@ -193,19 +157,11 @@
                 <div class="product-info">
                     <h1>KISS THE VILLAIN</h1>
                     <p class="author">Par : Rina kent </p>
-                    <p class="price">15 000 FCFA</p>
+                    <p class="price">18 600 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                        Un brillant étudiant en droit cache une part sombre que personne ne connaît. Lorsqu'il découvre que son nouveau professeur est le mystérieux criminel qui l'a pris au piège, un dangereux jeu de pouvoir commence.
                     </p>
 
-                    <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
-                    </div>
 
                     <button class="add-cart">Ajouter au panier</button>
                 </div>
@@ -214,12 +170,7 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+                    Gareth Carson est le fils modèle et l'héritier d'un puissant empire familial. Étudiant brillant en droit, il semble mener une vie parfaitement maîtrisée, mais derrière cette image se cache une personnalité beaucoup plus sombre. Après une nuit qui tourne mal, il se retrouve confronté à Kayden Lockwood, un criminel mystérieux qui devient peu après son professeur de droit pénal. Gareth ne peut pas révéler ce que Kayden a fait sans exposer ses propres secrets. Il décide alors de retourner la situation contre lui et de lui faire goûter à son propre poison. Entre rivalité, secrets, obsession et attirance interdite, leur affrontement se transforme en un jeu dangereux où aucun des deux ne semble pouvoir sortir indemne.
                 </p>
             </section>
 
@@ -227,7 +178,7 @@
                 <h2>Informations sur le livre</h2>
                 <p><strong>Auteur :</strong> Rina Kent</p>
                 <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
+                <p><strong>Nombre de pages :</strong> 568</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
             </section>
@@ -247,17 +198,10 @@
                     <p class="author">Par : Penelope douglas </p>
                     <p class="price">15 000 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                        Pendant sept ans, Misha et Ryen ont été les meilleurs amis sans jamais s'être rencontrés. Mais lorsqu'un secret les pousse enfin à se retrouver, leur relation prend une tournure qu'aucun des deux n'avait imaginée.
                     </p>
 
-                    <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
-                    </div>
+                 
 
                     <button class="add-cart">Ajouter au panier</button>
                 </div>
@@ -266,12 +210,7 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+                    En cinquième, Misha et Ryen deviennent correspondants grâce à un échange entre leurs écoles. Pendant sept ans, leurs lettres deviennent essentielles à leur quotidien et ils se confient tout, tout en respectant trois règles : pas de réseaux sociaux, pas de numéros de téléphone et pas de photos. Mais lorsque Misha découvre par hasard une photo de Ryen sur Internet, il décide de la retrouver. De son côté, Ryen n'a plus reçu de lettre de Misha depuis trois mois et commence à craindre de l'avoir perdu. Alors qu'un mystérieux élève arrive dans son école et qu'un inconnu commence à y laisser des messages inquiétants, Ryen se retrouve confrontée à des secrets qui vont remettre en question tout ce qu'elle croyait savoir sur Misha et sur elle-même.
                 </p>
             </section>
 
@@ -299,17 +238,9 @@
                     <p class="author">Par : H.D. CARLTON</p>
                     <p class="price">15 000 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                        Dans un manoir où la peur règne derrière chaque porte, une femme mariée rencontre un mystérieux inconnu qui l'observe depuis l'extérieur. Terrifiant mais fascinant, il pourrait bien être la seule personne capable de la libérer. 
                     </p>
 
-                    <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
-                    </div>
 
                     <button class="add-cart">Ajouter au panier</button>
                 </div>
@@ -318,12 +249,7 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+                    En novembre 1944, une femme vit prisonnière de Parsons Manor, auprès d'un mari qu'elle redoute plus que tout. Sa vie bascule lorsqu'un mystérieux inconnu apparaît à sa fenêtre. Il est dangereux, secret et lié au monde criminel, mais sa présence lui apporte quelque chose qu'elle n'avait plus : un sentiment de sécurité. Malgré la peur et les dangers qui les entourent, une attirance naît entre eux et se transforme peu à peu en une relation aussi intense que troublante. Entre secrets, obsession, désir et menace, elle devra découvrir qui est réellement ce mystérieux « fantôme » et jusqu'où il est prêt à aller pour elle.
                 </p>
             </section>
 
@@ -350,19 +276,11 @@
                 <div class="product-info">
                     <h1>UNCOVERING ROSE</h1>
                     <p class="author">Par : Annie charm</p>
-                    <p class="price">15 000 FCFA</p>
+                    <p class="price">18 700 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                  Des années après une séparation douloureuse, Dan retrouve Rose par hasard à bord d’un avion pour Rome. Mais derrière sa nouvelle identité se cachent des secrets, un enfant et un passé dangereux qui menacent de refaire surface.
                     </p>
 
-                    <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
-                    </div>
 
                     <button class="add-cart">Ajouter au panier</button>
                 </div>
@@ -371,12 +289,7 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+                   Rose et Dan se sont aimés autrefois, mais leur histoire a été brisée par la rivalité de leurs familles. Des années plus tard, Dan reconnaît Rosetta Conti sur un vol pour Rome, malgré son nouveau nom et les changements dans sa vie. Rose tente de rester à distance, car elle cache un passé douloureux, un mariage dangereux et un fils dont Dan ignorait l’existence. Lorsque leurs retrouvailles font resurgir les sentiments qu’ils pensaient avoir oubliés, Dan est déterminé à obtenir une seconde chance. Mais les secrets de Rose et le retour de son passé menacent leur fragile rapprochement. Entre amour retrouvé, rivalités familiales, danger et révélations, ils devront affronter ce qui les a séparés pour découvrir s’ils peuvent enfin construire quelque chose ensemble.
                 </p>
             </section>
 
@@ -384,7 +297,7 @@
                 <h2>Informations sur le livre</h2>
                 <p><strong>Auteur :</strong> Annie charme</p>
                 <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
+                <p><strong>Nombre de pages :</strong> 810</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
             </section>
@@ -402,7 +315,7 @@
                 <div class="product-info">
                     <h1>DARK ROMANCE</h1>
                     <p class="author">Par : Penelope douglas</p>
-                    <p class="price">15 000 FCFA</p>
+                    <p class="price">21 000 FCFA</p>
                     <p class="description">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                         Enim ratione tempora ullam fugiat delectus,
@@ -410,11 +323,7 @@
                         sunt molestiae eum veritatis nemo voluptas soluta..
                     </p>
 
-                    <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
-                    </div>
+
 
                     <button class="add-cart">Ajouter au panier</button>
                 </div>
@@ -436,7 +345,7 @@
                 <h2>Informations sur le livre</h2>
                 <p><strong>Auteur :</strong> Penelope douglas</p>
                 <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
+                <p><strong>Nombre de pages :</strong> 1700</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
             </section>
@@ -457,16 +366,11 @@
                     <p class="author">Par : Solène Luna</p>
                     <p class="price">15 000 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                        Une dette de vengeance, un homme dangereux et une rencontre qui bouleverse toutes les règles. Entre secrets, pouvoir et attirance, leur histoire risque de coûter bien plus cher que prévu.
                     </p>
 
                     <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                        
                     </div>
 
                     <button class="add-cart">Ajouter au panier</button>
@@ -476,12 +380,7 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+                    Lorsqu'une ancienne vengeance refait surface, le destin de deux personnes que tout oppose se retrouve brutalement lié. Entre secrets de famille, rapports de pouvoir et blessures du passé, chacun tente de garder le contrôle. Mais l'attirance qui naît entre eux rend les choses beaucoup plus compliquées qu'une simple histoire de vengeance. Alors que les vérités commencent à tomber, ils devront faire face à leurs choix et aux conséquences d'une relation qui n'aurait jamais dû commencer.
                 </p>
             </section>
 
@@ -489,7 +388,7 @@
                 <h2>Informations sur le livre</h2>
                 <p><strong>Auteur :</strong> Solène luna</p>
                 <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
+                <p><strong>Nombre de pages :</strong> 610</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
             </section>
@@ -511,12 +410,9 @@
                 <div class="product-info">
                     <h1>TWISTED</h1>
                     <p class="author">Par : Emilie Mcintire</p>
-                    <p class="price">15 000 FCFA</p>
+                    <p class="price">16 000 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                        Ava pensait avoir enfin trouvé un peu de tranquillité, jusqu'à ce qu'Alex Volkov, le meilleur ami de son frère, entre dans sa vie. Froid, mystérieux et dangereux, il pourrait bien devenir sa plus grande faiblesse.
                     </p>
 
                     <div class="quantity">
@@ -532,12 +428,7 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+                    Ava Chen est une jeune femme pleine de vie qui tente de laisser derrière elle les souvenirs troublants de son enfance. Lorsque son frère lui demande à Alex Volkov de veiller sur elle pendant son absence, elle se retrouve sous la protection d'un homme aussi séduisant que glacial. Alex est un homme marqué par une tragédie et obsédé par le succès et la vengeance. Il n'avait aucune intention de laisser les sentiments entrer dans sa vie, encore moins pour la sœur de son meilleur ami. Pourtant, Ava parvient peu à peu à fissurer ses défenses. Entre secrets, attirance, protection et blessures du passé, leur relation va révéler des vérités capables de bouleverser tout ce qu'ils pensaient savoir l'un de l'autre.
                 </p>
             </section>
 
@@ -545,7 +436,7 @@
                 <h2>Informations sur le livre</h2>
                 <p><strong>Auteur :</strong>Emily Mcintire</p>
                 <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
+                <p><strong>Nombre de pages :</strong> 511</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
             </section>
@@ -563,21 +454,13 @@
                 </div>
 
                 <div class="product-info">
-                    <h1>La vengence de la veuve noir </h1>
+                    <h1>Collide</h1>
                     <p class="author">Par : Morgane Moncomble</p>
-                    <p class="price">15 000 FCFA</p>
+                    <p class="price">19 000 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                        Summer déteste le hockey, mais un projet universitaire l’oblige à travailler avec Aiden Crawford, le capitaine de l’équipe. Entre disputes, taquineries et attirance inattendue, leur collaboration pourrait bien changer leurs plans.
                     </p>
 
-                    <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
-                    </div>
 
                     <button class="add-cart">Ajouter au panier</button>
                 </div>
@@ -586,19 +469,14 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+                    Summer Preston est une étudiante ambitieuse qui rêve de devenir psychologue du sport. Pour intégrer le programme de ses rêves, elle doit pourtant réaliser un projet de recherche sur un sport qu’elle déteste : le hockey. Son sujet d’étude est Aiden Crawford, le capitaine de l’équipe universitaire, qui est lui aussi contraint de participer au projet après une erreur de son équipe. Dès leur première rencontre, leurs personnalités opposées s’entrechoquent : Summer est organisée et déterminée, tandis qu’Aiden est beaucoup plus détendu et imprévisible. Mais leurs disputes se transforment progressivement en complicité, puis en une attirance qu’aucun des deux n’avait prévue.
                 </p>
             </section>
 
             <section class="book-info">
                 <h2>Informations sur le livre</h2>
-                <p><strong>Auteur :</strong>Morgane Moncomble</p>
-                <p><strong>Catégorie :</strong> Dark Romance</p>
+                <p><strong>Auteur :</strong>BAL KHABRA</p>
+                <p><strong>Catégorie :</strong> New adult</p>
                 <p><strong>Nombre de pages :</strong> 1100</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
@@ -609,29 +487,21 @@
 
 
 
-        <section class="product-page" id="collide">
+        <section class="product-page" id="collid">
 
             <section class="product">
                 <div class="product-image">
-                    <img src="image/tel na 3.jpeg" alt="Couverture du livre">
+                    <img src="image/télécharger (9).jpeg" alt="Couverture du livre">
                 </div>
 
                 <div class="product-info">
-                    <h1>Le livre d'Azrael</h1>
-                    <p class="author">Par : Shay Carrot</p>
+                    <h1>The lagacy</h1>
+                    <p class="author">Par : ELLE KENNEDYt</p>
                     <p class="price">15 000 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                        Trois ans après leur départ de Briar U, quatre couples découvrent que l’amour n’est que le début. Entre mariage, projets d’avenir, imprévus et nouvelles responsabilités, leur vie d’adulte réserve encore bien des surprises.
                     </p>
 
-                    <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
-                    </div>
 
                     <button class="add-cart">Ajouter au panier</button>
                 </div>
@@ -640,20 +510,15 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+                    The Legacy nous ramène auprès de Garrett et Hannah, Logan et Grace, Dean et Allie, ainsi que Tucker et Sabrina, trois ans après leur diplôme. Désormais confrontés à la vie d’adulte, les quatre couples doivent jongler entre leurs carrières, leurs relations et les décisions qui pourraient changer leur avenir. Au fil de quatre histoires, ils font face à de grands moments : un mariage, une demande en mariage, une fugue romantique et une grossesse surprise. Entre humour, émotions et difficultés du quotidien, chacun découvre que construire une vie à deux demande parfois bien plus que de tomber amoureux. The Legacy offre ainsi un aperçu de la vie de ces couples après leurs années à Briar U.
                 </p>
             </section>
 
             <section class="book-info">
                 <h2>Informations sur le livre</h2>
-                <p><strong>Auteur :</strong> Shay carrot</p>
-                <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
+                <p><strong>Auteur :</strong> ELLE KENNEDY</p>
+                <p><strong>Catégorie :</strong>New Adult</p>
+                <p><strong>Nombre de pages :</strong> 170</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
             </section>
@@ -663,28 +528,23 @@
 
 
 
-        <section class="product-page" id="collide">
+        <section class="product-page" id="colli">
 
             <section class="product">
                 <div class="product-image">
-                    <img src="image/tel na 3.jpeg" alt="Couverture du livre">
+                    <img src="image/télécharger (10).jpeg" alt="Couverture du livre">
                 </div>
 
                 <div class="product-info">
-                    <h1>Le livre d'Azrael</h1>
-                    <p class="author">Par : Shay Carrot</p>
+                    <h1>SPIRAL</h1>
+                    <p class="author">Par : BAL KHABRA</p>
                     <p class="price">15 000 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                       Elias est une étoile montante du hockey qui cherche à échapper aux projecteurs. Sage, ballerine ambitieuse, voit dans une fausse relation avec lui l'occasion de réaliser son rêve… mais leur arrangement pourrait rapidement devenir bien plus réel que prévu.
                     </p>
 
                     <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                       
                     </div>
 
                     <button class="add-cart">Ajouter au panier</button>
@@ -694,18 +554,13 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+                    Elias Westbrook vient d'être recruté par les Toronto Thunder et doit maintenant gérer la pression de la célébrité, des médias et des attentes placées sur lui. De son côté, Sage Beaumont rêve d'intégrer une prestigieuse compagnie de ballet, mais son manque de visibilité sur les réseaux sociaux menace ses ambitions. Lorsqu'une fausse relation avec Elias pourrait l'aider à se faire remarquer, Sage saisit l'occasion. Ils établissent des règles pour que leur arrangement reste purement fictif, mais leur complicité et leur attirance rendent rapidement ces règles difficiles à respecter. Entre hockey, ballet, faux rendez-vous et sentiments inattendus, Elias et Sage devront décider s'ils sont prêts à transformer leur jeu en véritable histoire d'amour.
                 </p>
             </section>
 
             <section class="book-info">
                 <h2>Informations sur le livre</h2>
-                <p><strong>Auteur :</strong> Shay carrot</p>
+                <p><strong>Auteur :</strong> BAL KHABRA</p>
                 <p><strong>Catégorie :</strong> Dark Romance</p>
                 <p><strong>Nombre de pages :</strong> 1100</p>
                 <p><strong>Langue :</strong> Français</p>
@@ -716,57 +571,7 @@
 
 
 
-        <section class="product-page" id="collide">
-
-            <section class="product">
-                <div class="product-image">
-                    <img src="image/tel na 3.jpeg" alt="Couverture du livre">
-                </div>
-
-                <div class="product-info">
-                    <h1>Le livre d'Azrael</h1>
-                    <p class="author">Par : Shay Carrot</p>
-                    <p class="price">15 000 FCFA</p>
-                    <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
-                    </p>
-
-                    <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
-                    </div>
-
-                    <button class="add-cart">Ajouter au panier</button>
-                </div>
-            </section>
-
-            <section class="details">
-                <h2>Description</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
-                </p>
-            </section>
-
-            <section class="book-info">
-                <h2>Informations sur le livre</h2>
-                <p><strong>Auteur :</strong> Shay carrot</p>
-                <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
-                <p><strong>Langue :</strong> Français</p>
-                <p><strong>Format :</strong> Broché</p>
-            </section>
-
-        </section>
-
+        
 
 
 
@@ -781,18 +586,13 @@
                 <div class="product-info">
                     <h1>The love hypothesis</h1>
                     <p class="author">Par : Ali azelwood</p>
-                    <p class="price">15 000 FCFA</p>
+                    <p class="price">18 050 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                        Une scientifique désespérée embrasse le premier homme venu pour convaincre sa meilleure amie qu’elle est amoureuse. Le problème ? Cet homme est Adam Carlsen, un professeur aussi brillant qu’intimidant. Leur faux couple pourrait bien devenir beaucoup trop réel.    
                     </p>
 
                     <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                        
                     </div>
 
                     <button class="add-cart">Ajouter au panier</button>
@@ -802,12 +602,7 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+              Olive Smith, doctorante en troisième année de biologie, ne croit pas vraiment aux relations amoureuses durables. Pour rassurer sa meilleure amie Anh, elle décide pourtant de lui faire croire qu’elle a enfin tourné la page et qu’elle fréquente quelqu’un. Dans un moment de panique, Olive embrasse le premier homme qu’elle croise : Adam Carlsen, un jeune professeur réputé pour être aussi brillant que difficile à approcher. Contre toute attente, Adam accepte de jouer le rôle de son faux petit ami. Mais alors que leur arrangement devait rester purement fictif, leur proximité commence à faire naître de véritables sentiments. Entre recherche scientifique, carrière universitaire, malentendus et attirance, Olive découvre que certaines choses sont beaucoup plus difficiles à contrôler qu’une simple hypothèse.
                 </p>
             </section>
 
@@ -833,19 +628,14 @@
 
                 <div class="product-info">
                     <h1>Aime moi je te fuis </h1>
-                    <p class="author">Par : Shay Carrot</p>
-                    <p class="price">15 000 FCFA</p>
+                    <p class="author">Par : Morgane Moncomble</p>
+                    <p class="price">14 000 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                 Après une nuit catastrophique avec un inconnu, Zoé découvre avec horreur qu’il s’agit de Jason, le meilleur ami de son colocataire. Entre eux, c’est la guerre… jusqu’à ce qu’un arrangement inattendu change les règles du jeu.
                     </p>
 
                     <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                       
                     </div>
 
                     <button class="add-cart">Ajouter au panier</button>
@@ -855,19 +645,14 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+                    Pour oublier son ex, Zoé décide de passer une nuit avec un inconnu rencontré dans un bar irlandais. Mais son plan tourne mal et elle garde de cette rencontre un souvenir désastreux. Quelques jours plus tard, elle découvre que cet inconnu n’est autre que Jason, le meilleur ami de son colocataire Loan. Désormais obligés de se côtoyer, Zoé et Jason ne peuvent pas oublier leur nuit catastrophique et développent rapidement une véritable animosité. Pourtant, lorsque Zoé vient lui demander de l’aide, Jason lui propose un arrangement qu’elle ne peut pas refuser. Entre provocations, proximité forcée et sentiments qu’ils refusent d’admettre, leur relation pourrait bien prendre une tournure très différente de ce qu’ils avaient imaginé.
                 </p>
             </section>
 
             <section class="book-info">
                 <h2>Informations sur le livre</h2>
-                <p><strong>Auteur :</strong> Shay carrot</p>
-                <p><strong>Catégorie :</strong> Dark Romance</p>
+                <p><strong>Auteur :</strong> Morgane Moncomble</p>
+                <p><strong>Catégorie :</strong> New adult </p>
                 <p><strong>Nombre de pages :</strong> 1100</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
@@ -887,19 +672,14 @@
 
                 <div class="product-info">
                     <h1>Play Along</h1>
-                    <p class="author">Par : Shay Carrot</p>
-                    <p class="price">15 000 FCFA</p>
+                    <p class="author">Par : Liz tomforde</p>
+                    <p class="price">13 525 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                        Un mariage improvisé à Las Vegas, un joueur de baseball qui craque pour elle depuis des années et une relation qui devait rester une simple comédie. Mais faire semblant d’être mariés pourrait bien faire naître de vrais sentiments.
                     </p>
 
                     <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                     
                     </div>
 
                     <button class="add-cart">Ajouter au panier</button>
@@ -909,20 +689,15 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+                    Kennedy Kay travaille comme préparatrice physique pour les Windy City Warriors et rêve de décrocher un poste de médecin dans une autre équipe. Après une rencontre inattendue avec Isaiah Rhodes, le joueur de baseball qui lui fait secrètement la cour depuis des années, les deux se retrouvent mariés à Las Vegas après une soirée particulièrement mouvementée. Pour protéger la carrière de Kennedy, ils décident de faire passer ce mariage pour une décision parfaitement réfléchie et de rester ensemble pendant une saison. Mais Isaiah voit dans cet arrangement une occasion de lui montrer qu’il pourrait être le mari idéal. Entre vie professionnelle, proximité forcée, blessures du passé et attirance grandissante, leur faux mariage devient rapidement beaucoup plus réel que prévu.
                 </p>
             </section>
 
             <section class="book-info">
                 <h2>Informations sur le livre</h2>
-                <p><strong>Auteur :</strong> Shay carrot</p>
-                <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
+                <p><strong>Auteur :</strong> Liz tomforde</p>
+                <p><strong>Catégorie :</strong> New Adult</p>
+                <p><strong>Nombre de pages :</strong> 410</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
             </section>
@@ -940,19 +715,14 @@
 
                 <div class="product-info">
                     <h1>Birthday Girl</h1>
-                    <p class="author">Par : Shay Carrot</p>
-                    <p class="price">15 000 FCFA</p>
+                    <p class="author">Par : Penelope Douglas</p>
+                    <p class="price">16 000 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                        Jordan pensait emménager avec son petit ami et commencer une nouvelle vie. Mais sous le même toit, elle découvre une attirance inattendue pour Pike, le père de son petit ami — une relation qu'elle ne devrait surtout pas envisager.
                     </p>
 
                     <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                     
                     </div>
 
                     <button class="add-cart">Ajouter au panier</button>
@@ -962,20 +732,15 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+            Jordan ne s’attendait pas à voir sa vie changer lorsqu’elle accepte de s’installer chez son petit ami et son père, Pike. Alors que sa relation avec son petit ami traverse déjà une période difficile, Jordan commence peu à peu à remarquer Pike d’une manière qu’elle n’aurait jamais imaginée. Il est attentif, protecteur et semble comprendre ce dont elle a besoin. De son côté, Pike a de plus en plus de mal à ignorer la présence de Jordan dans sa maison. Mais elle est la petite amie de son fils, et cette limite ne devrait jamais être franchie. Malgré leur volonté de résister à cette attirance interdite, leurs sentiments deviennent de plus en plus difficiles à cacher.
                 </p>
             </section>
 
             <section class="book-info">
                 <h2>Informations sur le livre</h2>
-                <p><strong>Auteur :</strong> Shay carrot</p>
-                <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
+                <p><strong>Auteur :</strong> Penelope Douglas</p>
+                <p><strong>Catégorie :</strong> New Adult</p>
+                <p><strong>Nombre de pages :</strong> 672</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
             </section>
@@ -994,20 +759,15 @@
                 </div>
 
                 <div class="product-info">
-                    <h1>Le livre d'Azrael</h1>
-                    <p class="author">Par : Shay Carrot</p>
+                    <h1>Wild Love</h1>
+                    <p class="author">Par : Elsie Silver</p>
                     <p class="price">15 000 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+        Ford Grant voulait fuir les projecteurs et recommencer une nouvelle vie à Rose Hill. Mais entre l'arrivée inattendue d'une fille qui prétend être sa fille biologique et le retour de Rosie, la petite sœur de son meilleur ami, sa nouvelle vie devient beaucoup plus compliquée que prévu.
                     </p>
 
                     <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                   
                     </div>
 
                     <button class="add-cart">Ajouter au panier</button>
@@ -1017,20 +777,15 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+  Ford Grant, milliardaire habitué aux projecteurs, décide de s'installer à Rose Hill pour ouvrir un studio d'enregistrement et échapper à l'attention médiatique. Mais ses plans changent lorsqu'une jeune fille de douze ans se présente à lui en affirmant être sa fille biologique. Alors qu'il doit apprendre à devenir père, Rosie Belmont revient également en ville après avoir quitté sa vie citadine. Elle demande à Ford de lui donner un emploi, et il accepte malgré l'attirance qu'il ressent pour elle depuis des années. Rosie est pourtant la petite sœur de son meilleur ami, une limite qu'il s'était toujours interdit de franchir. Entre leurs échanges piquants, la proximité professionnelle et les sentiments qu'ils tentent de contenir, Ford découvre que certaines limites deviennent difficiles à respecter lorsqu'il s'agit de Rosie.
                 </p>
             </section>
 
             <section class="book-info">
                 <h2>Informations sur le livre</h2>
-                <p><strong>Auteur :</strong> Shay carrot</p>
-                <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
+                <p><strong>Auteur :</strong> Elsie Silver</p>
+                <p><strong>Catégorie :</strong> New Adult</p>
+                <p><strong>Nombre de pages :</strong> 457</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
             </section>
@@ -1049,19 +804,14 @@
 
                 <div class="product-info">
                     <h1>Stay with me</h1>
-                    <p class="author">Par : Shay Carrot</p>
+                    <p class="author">Par : Nicole Fiorina</p>
                     <p class="price">15 000 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                        Envoyée à Dolor University pour tenter de reprendre le contrôle de sa vie, Mia ne voulait s'attacher à personne. Mais Ollie Masters, avec son charme et ses secrets, pourrait bien être celui qui bouleversera toutes ses certitudes.
                     </p>
 
                     <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                       
                     </div>
 
                     <button class="add-cart">Ajouter au panier</button>
@@ -1071,20 +821,15 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+                    À dix-neuf ans, Mia est envoyée à Dolor University, un établissement de réinsertion britannique destiné à de jeunes adultes considérés comme difficiles ou dangereux. Elle compte rester discrète et traverser ces deux années sans s'attacher à qui que ce soit. Mais son plan change lorsqu'elle rencontre Ollie Masters, un étudiant tatoué aux yeux verts et à la personnalité aussi intense que mystérieuse. Malgré son détachement émotionnel et son passé douloureux, Mia se rapproche progressivement de lui. Leur relation va l'obliger à affronter des émotions qu'elle a toujours cherché à éviter. Entre attirance, secrets, traumatismes et dangers, Mia devra découvrir si Ollie peut réellement l'aider à se libérer de son passé ou si leur histoire risque au contraire de les détruire tous les deux.
                 </p>
             </section>
 
             <section class="book-info">
                 <h2>Informations sur le livre</h2>
-                <p><strong>Auteur :</strong> Shay carrot</p>
-                <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
+                <p><strong>Auteur :</strong> Nicole Fiorina</p>
+                <p><strong>Catégorie :</strong> New Adult</p>
+                <p><strong>Nombre de pages :</strong> 510</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
             </section>
@@ -1102,20 +847,15 @@
                 </div>
 
                 <div class="product-info">
-                    <h1>Le livre d'Azrael</h1>
-                    <p class="author">Par : Shay Carrot</p>
-                    <p class="price">15 000 FCFA</p>
+                    <h1>    Midnight Kiss</h1>
+                    <p class="author">Par : Acacia Black</p>
+                    <p class="price">12 000 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                        À Golden Hills University, Nova et Cassius sont rivaux sur le terrain… mais une vidéo compromettante les oblige à prétendre être fiancés. Entre faux-semblants, rivalité et attirance, leur arrangement risque de devenir bien plus réel que prévu.
                     </p>
 
                     <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                       
                     </div>
 
                     <button class="add-cart">Ajouter au panier</button>
@@ -1125,20 +865,15 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+                    Nova est une star de l’équipe féminine de basket de Golden Hills University, tandis que Cassius est son rival et un athlète tout aussi déterminé. Malgré leur compétition constante, ils partagent chaque année une tradition particulière : une nuit où ils mettent leur rivalité de côté pour célébrer leur anniversaire commun. Mais cette fois, tout bascule lorsqu’une blessure menace l’avenir sportif de Nova et qu’une vidéo compromettante risque de provoquer leur suspension. Pour protéger leurs carrières, ils n’ont d’autre choix que de prétendre être fiancés. Alors qu’ils tentent de convaincre leur entourage que leur relation est réelle, les sentiments qu’ils s’efforçaient de garder sous contrôle commencent à devenir difficiles à ignorer.
                 </p>
             </section>
 
             <section class="book-info">
                 <h2>Informations sur le livre</h2>
-                <p><strong>Auteur :</strong> Shay carrot</p>
-                <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
+                <p><strong>Auteur :</strong> Acacia Black</p>
+                <p><strong>Catégorie :</strong> New Adult</p>
+                <p><strong>Nombre de pages :</strong> 457</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
             </section>
@@ -1157,19 +892,14 @@
 
                 <div class="product-info">
                     <h1>La vengence de la veuve </h1>
-                    <p class="author">Par : Shay Carrot</p>
-                    <p class="price">15 000 FCFA</p>
+                    <p class="author">Par : Morgane Moncomble</p>
+                    <p class="price">21 000 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                       En 1812, Londres est plongé dans la peur. Le jour, Wisteria est apothicaire ; la nuit, elle devient la mystérieuse Veuve Noire, tandis qu’un enquêteur déterminé traque un tueur en série. Leur alliance pourrait pourtant faire naître une attirance dangereusement interdite.
                     </p>
 
                     <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                        
                     </div>
 
                     <button class="add-cart">Ajouter au panier</button>
@@ -1179,20 +909,15 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+                    Londres, 1812. Wisteria mène une double vie. Apothicaire discrète le jour, elle devient dans l’ombre la Veuve Noire, une empoisonneuse qui aide les femmes à se débarrasser de leurs bourreaux. Mais un autre danger rôde dans les rues : Jack l’Égorgeur, dont les crimes plongent la ville dans la terreur. William, devenu enquêteur pour des raisons personnelles, est déterminé à retrouver le meurtrier. Lorsqu’il découvre les capacités de Wisteria à comprendre le tueur, il décide de s’allier à elle. Leur enquête les rapproche dangereusement et une attirance interdite naît entre eux, alors que Wisteria refuse catégoriquement de laisser l’amour entrer dans sa vie.
                 </p>
             </section>
 
             <section class="book-info">
                 <h2>Informations sur le livre</h2>
-                <p><strong>Auteur :</strong> Shay carrot</p>
-                <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
+                <p><strong>Auteur :</strong> Morgane Moncomble</p>
+                <p><strong>Catégorie :</strong> Romance</p>
+                <p><strong>Nombre de pages :</strong> 532</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
             </section>
@@ -1210,20 +935,15 @@
                 </div>
 
                 <div class="product-info">
-                    <h1>Le livre d'Azrael</h1>
-                    <p class="author">Par : Shay Carrot</p>
-                    <p class="price">15 000 FCFA</p>
+                    <h1>Mad Majesty</h1>
+                    <p class="author">Par : Delinda Dane</p>
+                    <p class="price">14 000 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                        Un prince rebelle, une couronne à sauver et un mariage arrangé qui ne se déroulera absolument pas comme prévu. Lorsque Damian décide de choisir lui-même sa future épouse, il bouleverse les règles de la monarchie.
                     </p>
 
                     <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                       
                     </div>
 
                     <button class="add-cart">Ajouter au panier</button>
@@ -1233,20 +953,15 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+                    Depuis son retour de l’armée, le prince Damian enchaîne les scandales et met la monarchie à rude épreuve. Mais lorsque son père meurt et qu’il devient l’héritier appelé à monter sur le trône, sa famille décide qu’un mariage arrangé est nécessaire pour préserver l’image de la Couronne. Sa mère lui choisit Ophélia St John, une jeune femme parfaitement préparée à devenir princesse. Damian refuse pourtant de se laisser dicter son avenir et décide de choisir lui-même son épouse : Esmée, la petite sœur d’Ophélia. Contrairement à sa sœur, Esmée n’a jamais été préparée à régner. Synesthète, sarcastique et profondément empathique, elle se retrouve soudain au cœur de la monarchie. Entre mariage arrangé, proximité forcée, secrets et sentiments inattendus, Damian et Esmée devront découvrir s’ils peuvent construire leur propre histoire sans faire vaciller la Couronne.
                 </p>
             </section>
 
             <section class="book-info">
                 <h2>Informations sur le livre</h2>
-                <p><strong>Auteur :</strong> Shay carrot</p>
-                <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
+                <p><strong>Auteur :</strong> Delinda Dane</p>
+                <p><strong>Catégorie :</strong> Romance</p>
+                <p><strong>Nombre de pages :</strong> 570</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
             </section>
@@ -1263,20 +978,15 @@
                 </div>
 
                 <div class="product-info">
-                    <h1>Le livre d'Azrael</h1>
-                    <p class="author">Par : Shay Carrot</p>
-                    <p class="price">15 000 FCFA</p>
+                    <h1>Un automne POur te succomber </h1>
+                    <p class="author">Par : Morgane Moncomble</p>
+                    <p class="price">18 000 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                        Camélia voulait profiter de la mort mystérieuse de son ancien bourreau pour satisfaire sa soif de vengeance. Mais lorsque Lou, son meilleur ami, est accusé du meurtre, elle se retrouve face à un passé qu’elle pensait avoir laissé derrière elle.
                     </p>
 
                     <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                        
                     </div>
 
                     <button class="add-cart">Ajouter au panier</button>
@@ -1286,20 +996,15 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+                    Camélia O’Brien est une future avocate passionnée par les crimes non résolus. Lorsqu’elle apprend que Rory Cavendish, le garçon qui l’a humiliée dix ans auparavant, est mystérieusement mort, elle découvre que son meilleur ami Lou McAllister est accusé du meurtre. Pour Camélia, cette affaire représente une occasion parfaite de résoudre son premier véritable mystère tout en affrontant celui qui lui a fait du mal. Mais Lou, désormais abandonné par son entourage et confronté à la prison, n’a plus qu’une personne vers qui se tourner : Camélia. Alors que l’enquête progresse, les souvenirs du passé refont surface et les deux jeunes gens découvrent que la vérité pourrait être bien plus complexe qu’ils ne l’imaginaient.
                 </p>
             </section>
 
             <section class="book-info">
                 <h2>Informations sur le livre</h2>
-                <p><strong>Auteur :</strong> Shay carrot</p>
-                <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
+                <p><strong>Auteur :</strong>Morgane Moncomble</p>
+                <p><strong>Catégorie :</strong> Romance</p>
+                <p><strong>Nombre de pages :</strong> 610</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
             </section>
@@ -1316,20 +1021,15 @@
                 </div>
 
                 <div class="product-info">
-                    <h1>Le livre d'Azrael</h1>
-                    <p class="author">Par : Shay Carrot</p>
+                    <h1>THE WRONG BRIDE</h1>
+                    <p class="author">Par : Catharina Maura</p>
                     <p class="price">15 000 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                        Lorsque sa sœur disparaît le jour de son mariage, Raven est contrainte de prendre sa place et d’épouser Ares Windsor, l’homme qu’elle aime depuis toujours. Mais pour Ares, Raven n’a jamais été celle qu’il voulait épouser.
                     </p>
 
                     <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                      
                     </div>
 
                     <button class="add-cart">Ajouter au panier</button>
@@ -1339,20 +1039,15 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+                    Raven Du Pont a toujours aimé Ares Windsor en secret, même si le puissant milliardaire n’a jamais eu d’yeux que pour sa sœur Hannah. Le jour où Hannah ne se présente pas à son propre mariage, Raven se retrouve obligée de prendre sa place et d’épouser l’homme qu’elle a toujours désiré. Pour Ares, cette union est loin d’être celle qu’il avait imaginée, et leur mariage commence sous le signe de la tension et du ressentiment. Pourtant, Raven est déterminée à ne plus rester dans l’ombre de sa sœur. Alors qu’ils doivent apprendre à vivre ensemble, les sentiments, les secrets et les conflits familiaux viennent compliquer leur mariage arrangé. Entre amour non partagé, jalousie et seconde chance, Raven devra décider jusqu’où elle est prête à aller pour conquérir celui qu’elle aime.
                 </p>
             </section>
 
             <section class="book-info">
                 <h2>Informations sur le livre</h2>
-                <p><strong>Auteur :</strong> Shay carrot</p>
-                <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
+                <p><strong>Auteur :</strong> Catharina Maura </p>
+                <p><strong>Catégorie :</strong>Romance</p>
+                <p><strong>Nombre de pages :</strong> 867</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
             </section>
@@ -1371,19 +1066,14 @@
 
                 <div class="product-info">
                     <h1>Ice breaker</h1>
-                    <p class="author">Par : Shay Carrot</p>
-                    <p class="price">15 000 FCFA</p>
+                    <p class="author">Par : Hannah Grace</p>
+                    <p class="price">18 000 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                        Anastasia a consacré sa vie au patinage artistique et ne compte rien laisser se mettre entre elle et son rêve olympique. Mais lorsque le destin l’oblige à partager la glace avec Nate, le capitaine de l’équipe de hockey, leur rivalité pourrait bien se transformer en quelque chose de beaucoup plus intense.
                     </p>
 
                     <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                    
                     </div>
 
                     <button class="add-cart">Ajouter au panier</button>
@@ -1393,19 +1083,14 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+                    Anastasia Allen rêve depuis toujours de représenter les États-Unis en patinage artistique. À l’université de Maple Hills, tout semble enfin aller dans la bonne direction jusqu’à ce qu’un problème avec la patinoire oblige l’équipe de hockey et celle de patinage à partager le même espace. Anastasia se retrouve alors face à Nate Hawkins, le capitaine de l’équipe de hockey, dont l’assurance et le charme l’agacent immédiatement. Mais lorsque son partenaire de patinage se retrouve indisponible, Nate devient étonnamment la personne sur laquelle elle peut compter. Ce qui commence par une rivalité et une entente difficile évolue progressivement vers une complicité et une attirance qu’Anastasia n’avait absolument pas prévues.
                 </p>
             </section>
 
             <section class="book-info">
                 <h2>Informations sur le livre</h2>
-                <p><strong>Auteur :</strong> Shay carrot</p>
-                <p><strong>Catégorie :</strong> Dark Romance</p>
+                <p><strong>Auteur :</strong> Hannah Grace</p>
+                <p><strong>Catégorie :</strong>  Romance</p>
                 <p><strong>Nombre de pages :</strong> 1100</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
@@ -1423,20 +1108,14 @@
                 </div>
 
                 <div class="product-info">
-                    <h1>Le livre d'Azrael</h1>
-                    <p class="author">Par : Shay Carrot</p>
-                    <p class="price">15 000 FCFA</p>
+                    <h1>Twisted Vows</h1>
+                    <p class="author">Par : Ana Huang</p>
+                    <p class="price">16 000 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
-                    </p>
+                       Wren arrive à Blackwood Academy après avoir découvert qu’elle est morte et se retrouve chargée d’apprendre à guider les âmes vers l’au-delà. Son premier devoir l’oblige à travailler avec August, le mystérieux « Démon de Blackwood »… et leur rivalité pourrait rapidement se transformer en quelque chose de bien plus dangereux
 
                     <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                     
                     </div>
 
                     <button class="add-cart">Ajouter au panier</button>
@@ -1446,20 +1125,15 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+                   Wren Loughty se réveille aux portes de Blackwood Academy, une mystérieuse école magique située aux frontières de l’au-delà. Elle découvre qu’elle est morte et qu’elle doit désormais apprendre à guider les âmes perdues vers l’autre monde. Pour son premier exercice, elle est associée à Augustine Hughes, un élève aussi fascinant que redouté, surnommé le « Démon de Blackwood ». Entre rivalité, secrets et défis, Wren et August se rapprochent malgré eux. Mais dans cette école où chacun semble cacher quelque chose, certaines connexions peuvent devenir dangereuses et certaines trahisons laisser des traces irréversibles.
                 </p>
             </section>
 
             <section class="book-info">
                 <h2>Informations sur le livre</h2>
-                <p><strong>Auteur :</strong> Shay carrot</p>
-                <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
+                <p><strong>Auteur :</strong> Ana Huang</p>
+                <p><strong>Catégorie :</strong> Romance</p>
+                <p><strong>Nombre de pages :</strong> 430</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
             </section>
@@ -1476,19 +1150,14 @@
             
                 <div class="product-info">
                     <h1>Twisted hate</h1>
-                    <p class="author">Par : Shay Carrot</p>
-                    <p class="price">15 000 FCFA</p>
+                    <p class="author">Par : Ana Huang/p>
+                    <p class="price">19 000 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                        Ava pensait pouvoir oublier son passé, jusqu’à ce qu’Alex Volkov, le meilleur ami de son frère, entre dans sa vie. Froid, mystérieux et interdit, il pourrait bien devenir son plus grand danger… ou son plus grand amour.
                     </p>
 
                     <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                        
                     </div>
 
                     <button class="add-cart">Ajouter au panier</button>
@@ -1498,20 +1167,15 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+          Ava Chen est une jeune femme solaire qui tente d’avancer malgré les souvenirs troublants de son enfance. Lorsqu’Alex Volkov, le meilleur ami de son frère, devient son voisin et se retrouve chargé de veiller sur elle, leur relation prend rapidement une tournure inattendue. Alex est froid, possessif et habitué à tout contrôler, mais Ava parvient peu à peu à fissurer ses défenses. Entre attirance, secrets du passé et dangers qui les entourent, leur relation va les pousser à affronter des vérités qu’ils auraient préféré laisser enfouies.
                 </p>
             </section>
 
             <section class="book-info">
                 <h2>Informations sur le livre</h2>
-                <p><strong>Auteur :</strong> Shay carrot</p>
-                <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
+                <p><strong>Auteur :</strong>Ana HUANG </p>
+                <p><strong>Catégorie :</strong> Romance</p>
+                <p><strong>Nombre de pages :</strong> 710</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
             </section>
@@ -1527,7 +1191,7 @@
                 </div>
 
                 <div class="product-info">
-                    <h1>Le livre d'Azrael</h1>
+                    <h1>HUM</h1>
                     <p class="author">Par : Shay Carrot</p>
                     <p class="price">15 000 FCFA</p>
                     <p class="description">
@@ -1538,9 +1202,7 @@
                     </p>
 
                     <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                       
                     </div>
                 
                     <button class="add-cart">Ajouter au panier</button>
@@ -1572,28 +1234,23 @@
 
 
 
-        <section class="product-page" id="azrael-5">
+        <section class="product-page" id="Mistake">
 
             <section class="product">
                 <div class="product-image">
-                    <img src="image/ROM1.jpeg" alt="Couverture du livre">
+                    <img src="image/erreur.jpeg" alt="Couverture du livre">
                 </div>
 
                 <div class="product-info">
-                    <h1>Le livre d'Azrael</h1>
-                    <p class="author">Par : Shay Carrot</p>
+                    <h1>The Mistake </h1>
+                    <p class="author">Par :ELLE KENNEDY </p>
                     <p class="price">15 000 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                        John Logan, star du hockey à Briar University, pensait pouvoir séduire Grace sans difficulté. Mais après une erreur qui la pousse à s’éloigner, il devra tout faire pour obtenir une seconde chance auprès d’elle.
                     </p>
 
                     <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                       
                     </div>
 
                     <button class="add-cart">Ajouter au panier</button>
@@ -1603,20 +1260,15 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+                    John Logan est l’un des joueurs de hockey les plus populaires de Briar University. Derrière son charme et son assurance se cachent pourtant des doutes sur son avenir et sur ce qu’il veut réellement faire de sa vie. Sa rencontre avec Grace Ivers, une étudiante de première année, devait être une simple distraction. Mais après une erreur qui la blesse et la pousse à prendre ses distances, Logan comprend qu’il risque de la perdre. Grace, autrefois timide et réservée, a changé et ne compte pas lui pardonner facilement. Logan devra alors faire ses preuves et lui montrer qu’il mérite une seconde chance.
                 </p>
             </section>
 
             <section class="book-info">
                 <h2>Informations sur le livre</h2>
-                <p><strong>Auteur :</strong> Shay carrot</p>
+                <p><strong>Auteur :</strong> Elle Kennedy</p>
                 <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
+                <p><strong>Nombre de pages :</strong> 410</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
             </section>
@@ -1634,20 +1286,15 @@
                 </div>
 
                 <div class="product-info">
-                    <h1>Le livre d'Azrael</h1>
-                    <p class="author">Par : Shay Carrot</p>
+                    <h1>Twisted Vows</h1>
+                    <p class="author">Par : Ana Huang</p>
                     <p class="price">15 000 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                        Ava pensait pouvoir mener une vie tranquille, jusqu’à ce qu’Alex Volkov, le meilleur ami de son frère, devienne son voisin et son protecteur. Froid, mystérieux et dangereux, Alex est pourtant le seul homme capable de faire vaciller ses défenses.
                     </p>
 
                     <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                       
                     </div>
 
                     <button class="add-cart">Ajouter au panier</button>
@@ -1657,19 +1304,14 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+                    Ava Chen est une jeune femme lumineuse qui tente d’avancer malgré les souvenirs troublants de son enfance. Alex Volkov, lui, est froid, ambitieux et entièrement concentré sur sa réussite et sa vengeance. Lorsque le frère d’Ava lui demande de veiller sur elle, Alex se retrouve malgré lui beaucoup plus proche de la jeune femme qu’il ne devrait l’être. Entre eux naît une attirance difficile à contrôler, alors même que leur relation est interdite. Mais lorsque les secrets du passé d’Ava et d’Alex refont surface, leur histoire risque de prendre une tournure bien plus dangereuse qu’ils ne l’avaient imaginé.
                 </p>
             </section>
 
             <section class="book-info">
                 <h2>Informations sur le livre</h2>
-                <p><strong>Auteur :</strong> Shay carrot</p>
-                <p><strong>Catégorie :</strong> Dark Romance</p>
+                <p><strong>Auteur :</strong> Ana Huang </p>
+                <p><strong>Catégorie :</strong> Romance</p>
                 <p><strong>Nombre de pages :</strong> 1100</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
@@ -1688,20 +1330,15 @@
                 </div>
 
                 <div class="product-info">
-                    <h1>Le livre d'Azrael</h1>
-                    <p class="author">Par : Shay Carrot</p>
+                    <h1>Twisted Hate </h1>
+                    <p class="author">Par : Ana Huang/p>
                     <p class="price">15 000 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                        Jules et Josh se détestent depuis des années, mais leur rivalité prend une tournure inattendue lorsqu’une attirance irrépressible les rapproche. Entre provocations, désir et secrets du passé, leur relation devient de plus en plus difficile à contrôler.
                     </p>
 
                     <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                       
                     </div>
 
                     <button class="add-cart">Ajouter au panier</button>
@@ -1711,20 +1348,15 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+                    Jules Ambrose, étudiante en droit, et Josh Chen, étudiant en médecine, sont loin de s’entendre. Depuis des années, ils se cherchent et se provoquent à la moindre occasion. Mais lorsqu’ils se retrouvent à travailler ensemble dans une clinique, leur hostilité commence à laisser place à une attirance qu’ils ne peuvent plus ignorer. Ils décident alors d’entamer une relation uniquement physique, sans sentiments ni engagement. Pourtant, plus ils se rapprochent, plus les règles qu’ils s’étaient fixées deviennent difficiles à respecter. Lorsque le passé de Jules refait surface avec le retour de Max, un homme sorti de prison, leur relation est confrontée à de nouveaux dangers.
                 </p>
             </section>
 
             <section class="book-info">
                 <h2>Informations sur le livre</h2>
-                <p><strong>Auteur :</strong> Shay carrot</p>
-                <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
+                <p><strong>Auteur :</strong> Ana Huang </p>
+                <p><strong>Catégorie :</strong>  Romance</p>
+                <p><strong>Nombre de pages :</strong> 421</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
             </section>
@@ -1741,20 +1373,15 @@
                 </div>
 
                 <div class="product-info">
-                    <h1>Le livre d'Azrael</h1>
-                    <p class="author">Par : Shay Carrot</p>
+                    <h1>Twisted Games </h1>
+                    <p class="author">Par : Ana Huang </p>
                     <p class="price">15 000 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                        Bridget est une princesse destinée au trône, tandis que Rhys est son garde du corps, froid et déterminé à garder ses distances. Mais entre devoir, danger et attirance interdite, leur relation devient impossible à contrôler.
                     </p>
 
                     <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                        
                     </div>
 
                     <button class="add-cart">Ajouter au panier</button>
@@ -1764,20 +1391,15 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+                    Bridget von Ascheberg a toujours su qu’un jour elle devrait assumer les responsabilités liées à son statut royal. Lorsque son frère abdique, son avenir prend une tournure inattendue et elle doit se préparer à devenir reine. Rhys Larsen, son garde du corps, est chargé de la protéger et s’est toujours imposé une règle : ne jamais s’attacher à une cliente. Pourtant, Bridget va rapidement mettre cette règle à l’épreuve. Alors que les dangers qui entourent la future reine se multiplient, Rhys se rapproche d’elle pour assurer sa sécurité. Entre leurs devoirs, leurs secrets et une attirance de plus en plus forte, ils devront faire face aux conséquences de leurs choix.
                 </p>
             </section>
 
             <section class="book-info">
                 <h2>Informations sur le livre</h2>
-                <p><strong>Auteur :</strong> Shay carrot</p>
-                <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
+                <p><strong>Auteur :</strong>Ana Huang </p>
+                <p><strong>Catégorie :</strong> Romance</p>
+                <p><strong>Nombre de pages :</strong> 608</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
             </section>
@@ -1796,20 +1418,15 @@
                 </div>
 
                 <div class="product-info">
-                    <h1>Le livre d'Azrael</h1>
-                    <p class="author">Par : Shay Carrot</p>
-                    <p class="price">15 000 FCFA</p>
+                    <h1>Check Mate </h1>
+                    <p class="author">Par : Ali Hazelwood</p>
+                    <p class="price">16 100 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                       Mallory avait décidé de ne plus jamais jouer aux échecs, jusqu’à ce qu’un dernier tournoi la ramène face à Nolan Sawyer, champion du monde et rival aussi agaçant qu’attirant. Entre compétition et attirance, la partie prend rapidement une tournure inattendue.
                     </p>
 
                     <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                        
                     </div>
 
                     <button class="add-cart">Ajouter au panier</button>
@@ -1819,20 +1436,15 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+                    Mallory Greenleaf a tiré un trait sur les échecs, un jeu qui a profondément bouleversé sa famille. Désormais, elle travaille comme mécanicienne pour subvenir aux besoins de sa mère et de ses deux petites sœurs. Mais lorsqu’elle accepte de participer à un dernier tournoi, elle se retrouve face à Nolan Sawyer, jeune prodige et champion du monde en titre. Alors que les deux adversaires s’affrontent sur l’échiquier, une attirance inattendue commence à naître entre eux. Mallory doit alors composer avec son passé, ses responsabilités familiales et les sentiments que Nolan fait naître en elle.
                 </p>
             </section>
 
             <section class="book-info">
                 <h2>Informations sur le livre</h2>
-                <p><strong>Auteur :</strong> Shay carrot</p>
-                <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
+                <p><strong>Auteur :</strong> Ali Hazelwood </p>
+                <p><strong>Catégorie :</strong>Romance</p>
+                <p><strong>Nombre de pages :</strong> 506</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
             </section>
@@ -1845,24 +1457,19 @@
 
             <section class="product">
                 <div class="product-image">
-                    <img src="image/THR1.jpeg" alt="Couverture du livre">
+                    <img src="image/The Case File (The Bellhaven Series).jpeg" alt="Couverture du livre">
                 </div>
 
                 <div class="product-info">
-                    <h1>Le livre d'Azrael</h1>
+                    <h1>The Ghost Station </h1>
                     <p class="author">Par : Shay Carrot</p>
                     <p class="price">15 000 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                        Ophelia, psychologue spécialisée dans un mystérieux trouble spatial, rejoint une équipe d’exploration sur une planète abandonnée. Mais lorsqu’un membre de l’équipage est retrouvé mort, elle comprend que quelque chose de bien plus inquiétant se cache sur cette planète.
                     </p>
 
                     <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                     
                     </div>
 
                     <button class="add-cart">Ajouter au panier</button>
@@ -1872,20 +1479,15 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+                    La psychologue Dr Ophelia Bray est envoyée avec une petite équipe d’exploration sur une planète abandonnée, où se trouvent les vestiges d’une ancienne civilisation. Leur mission semble simple, mais dès leur arrivée, certains détails troublants attirent l’attention d’Ophelia : la station a été abandonnée dans des circonstances mystérieuses et ses coéquipiers semblent lui cacher des informations. Alors qu’ils cherchent à comprendre ce qui s’est passé, leur pilote est retrouvé brutalement assassiné. Ophelia craint que le mystérieux syndrome qu’elle étudie ne soit à l’origine de cette violence. Mais plus l’équipe enquête, plus une autre menace semble se dessiner. Isolés sur une planète inconnue, ils devront découvrir la vérité avant qu’il ne soit trop tard.
                 </p>
             </section>
 
             <section class="book-info">
                 <h2>Informations sur le livre</h2>
-                <p><strong>Auteur :</strong> Shay carrot</p>
-                <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
+                <p><strong>Auteur :</strong> The Ghost Station</p>
+                <p><strong>Catégorie :</strong> Romance</p>
+                <p><strong>Nombre de pages :</strong> 510</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
             </section>
@@ -1899,24 +1501,19 @@
 
             <section class="product">
                 <div class="product-image">
-                    <img src="image/THR2.jpeg" alt="Couverture du livre">
+                    <img src="image/The Ghost Station – New Sci-Fi Cyber Thriller Out Now!.jpeg" alt="Couverture du livre">
                 </div>
 
                 <div class="product-info">
-                    <h1>Le livre d'Azrael</h1>
+                    <h1>The Ghost Station </h1>
                     <p class="author">Par : Shay Carrot</p>
                     <p class="price">15 000 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                        Ophelia, psychologue spécialisée dans un mystérieux trouble spatial, rejoint une équipe d’exploration sur une planète abandonnée. Mais lorsqu’un membre de l’équipage est retrouvé mort, elle comprend que quelque chose de bien plus inquiétant se cache sur cette planète.
                     </p>
 
                     <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                        
                     </div>
 
                     <button class="add-cart">Ajouter au panier</button>
@@ -1926,20 +1523,14 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
-                </p>
+                    La psychologue Dr Ophelia Bray est envoyée avec une petite équipe d’exploration sur une planète abandonnée, où se trouvent les vestiges d’une ancienne civilisation. Leur mission semble simple, mais dès leur arrivée, certains détails troublants attirent l’attention d’Ophelia : la station a été abandonnée dans des circonstances mystérieuses et ses coéquipiers semblent lui cacher des informations. Alors qu’ils cherchent à comprendre ce qui s’est passé, leur pilote est retrouvé brutalement assassiné. Ophelia craint que le mystérieux syndrome qu’elle étudie ne soit à l’origine de cette violence. Mais plus l’équipe enquête, plus une autre menace semble se dessiner. Isolés sur une planète inconnue, ils devront découvrir la vérité avant qu’il ne soit trop tard.
             </section>
 
             <section class="book-info">
                 <h2>Informations sur le livre</h2>
-                <p><strong>Auteur :</strong> Shay carrot</p>
-                <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
+                <p><strong>Auteur :</strong> Author Name </p>
+                <p><strong>Catégorie :</strong> Thriller </p>
+                <p><strong>Nombre de pages :</strong> 534</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
             </section>
@@ -1952,24 +1543,19 @@
 
             <section class="product">
                 <div class="product-image">
-                    <img src="image/THR3.jpeg" alt="Couverture du livre">
+                    <img src="image/THR1.jpeg" alt="Couverture du livre">
                 </div>
 
                 <div class="product-info">
-                    <h1>Le livre d'Azrael</h1>
-                    <p class="author">Par : Shay Carrot</p>
+                    <h1>The Shadow </h1>
+                    <p class="author">Par : James Patterson et Brian Sitts</p>
                     <p class="price">15 000 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                        Lamont Cranston, justicier mystérieux des années 1930, se réveille plus d’un siècle plus tard dans un monde qu’il ne reconnaît plus. Mais son vieil ennemi, Shiwan Khan, semble lui aussi avoir traversé le temps….
                     </p>
 
                     <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                       
                     </div>
 
                     <button class="add-cart">Ajouter au panier</button>
@@ -1979,20 +1565,15 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+                    Lamont Cranston mène autrefois une double vie : mondain le jour, il devient la mystérieuse Ombre lorsqu’il combat le crime. Après une confrontation avec son ennemi juré Shiwan Khan, Lamont se retrouve projeté dans un futur lointain. Il découvre alors un monde radicalement différent du sien et rencontre Maddy Gomes, une adolescente qui connaît déjà la légende de l’Ombre. Mais le danger n’a pas disparu : l’influence de Khan semble toujours présente. Pour comprendre ce qui s’est passé et empêcher de nouvelles victimes, Lamont doit affronter un ennemi qu’il croyait avoir laissé dans le passé.
                 </p>
             </section>
 
             <section class="book-info">
                 <h2>Informations sur le livre</h2>
-                <p><strong>Auteur :</strong> Shay carrot</p>
-                <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
+                <p><strong>Auteur :</strong> James Patterson et Brian Sitts</p>
+                <p><strong>Catégorie :</strong> Thriller </p>
+                <p><strong>Nombre de pages :</strong> 540</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
             </section>
@@ -2005,24 +1586,19 @@
 
             <section class="product">
                 <div class="product-image">
-                    <img src="image/THR4" alt="Couverture du livre">
+                    <img src="image/17_100.jpeg" alt="Couverture du livre">
                 </div>
 
                 <div class="product-info">
-                    <h1>Le livre d'Azrael</h1>
-                    <p class="author">Par : Shay Carrot</p>
-                    <p class="price">15 000 FCFA</p>
+                    <h1> Kill Joy </h1>
+                    <p class="author">Par : Holly jackson</p>
+                    <p class="price">23 000 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                        Six suspects, trois heures, un meurtre… Lors d’une mystérieuse murder party, Pip se glisse dans la peau d’une détective et découvre qu’elle pourrait bien avoir un véritable talent pour résoudre les crimes.
                     </p>
 
                     <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                      
                     </div>
 
                     <button class="add-cart">Ajouter au panier</button>
@@ -2032,20 +1608,15 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+                    Pip Fitz-Amobi est invitée par ses amis à une murder party organisée dans un décor des années 1920. Le principe est simple : six participants, un meurtre fictif et quelques heures pour découvrir l’identité du coupable. D’abord peu enthousiaste, Pip se prend rapidement au jeu et commence à examiner chaque indice, chaque alibi et chaque suspect. Mais tandis qu’elle tente de résoudre le meurtre de Reginald Remy, une autre affaire bien réelle commence à occuper ses pensées : celle d’Andie Bell. Cette enquête fictive va ainsi devenir le point de départ de la passion de Pip pour les mystères et les affaires non résolues
                 </p>
             </section>
 
             <section class="book-info">
                 <h2>Informations sur le livre</h2>
-                <p><strong>Auteur :</strong> Shay carrot</p>
-                <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
+                <p><strong>Auteur :</strong> Holly jackson</p>
+                <p><strong>Catégorie :</strong> Thriller</p>
+                <p><strong>Nombre de pages :</strong> 110</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
             </section>
@@ -2058,24 +1629,19 @@
 
             <section class="product">
                 <div class="product-image">
-                    <img src="image/THR5" alt="Couverture du livre">
+                    <img src="image/18 New Page-Turners Our Editors Couldn't Put Down This Year, From Thrillers to Romance Novels.jpeg" alt="Couverture du livre">
                 </div>
 
                 <div class="product-info">
-                    <h1>Le livre d'Azrael</h1>
-                    <p class="author">Par : Shay Carrot</p>
+                    <h1>Good Girl Bad Blood </h1>
+                    <p class="author">Par : Holly jackson</p>
                     <p class="price">15 000 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                        Pip pensait en avoir terminé avec les enquêtes, mais lorsqu’un garçon disparaît mystérieusement et que la police refuse d’intervenir, elle décide de reprendre son rôle de détective. Cette fois, chaque indice pourrait la rapprocher d’un danger bien réel.
                     </p>
 
                     <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                       
                     </div>
 
                     <button class="add-cart">Ajouter au panier</button>
@@ -2085,20 +1651,15 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+                    Après avoir résolu l’affaire Andie Bell, Pip Fitz-Amobi pensait pouvoir laisser les enquêtes derrière elle. Son podcast consacré au meurtre est pourtant devenu un véritable phénomène. Lorsque Jamie Reynolds, le frère de son ami Connor, disparaît soudainement, Pip ne peut pas rester sans agir. La police refuse d’ouvrir une enquête, considérant que Jamie est déjà parti de chez lui par le passé. Pip décide alors de rechercher elle-même sa trace, en interrogeant ses proches et en suivant les indices qu’il a laissés derrière lui. Mais son enquête révèle peu à peu des secrets inquiétants et attire l’attention de personnes qui préféreraient qu’elle arrête de poser des questions.
                 </p>
             </section>
 
             <section class="book-info">
                 <h2>Informations sur le livre</h2>
-                <p><strong>Auteur :</strong> Shay carrot</p>
-                <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
+                <p><strong>Auteur :</strong> Holly Jackson </p>
+                <p><strong>Catégorie :</strong> Thriller </p>
+                <p><strong>Nombre de pages :</strong> 511</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
             </section>
@@ -2110,24 +1671,19 @@
 
             <section class="product">
                 <div class="product-image">
-                    <img src="image/THR5" alt="Couverture du livre">
+                    <img src="image/télécharger thriller.jpeg" alt="Couverture du livre">
                 </div>
 
                 <div class="product-info">
-                    <h1>Le livre d'Azrael</h1>
-                    <p class="author">Par : Shay Carrot</p>
+                    <h1>CARAVAL</h1>
+                    <p class="author">Par : Stephanie Garber </p>
                     <p class="price">15 000 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                        Scarlett rêve depuis toujours d’assister à Caraval, un jeu mystérieux où tout semble possible. Mais lorsque sa sœur Donatella disparaît au début du jeu, Scarlett doit la retrouver avant la fin des cinq nuits.
                     </p>
 
                     <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                        
                     </div>
 
                     <button class="add-cart">Ajouter au panier</button>
@@ -2137,20 +1693,15 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+                    Scarlett et sa petite sœur Donatella vivent sous l’autorité d’un père cruel qui leur interdit de quitter leur île. Alors que Scarlett s’apprête à épouser un homme qu’elle n’a jamais rencontré, elle reçoit enfin une invitation pour participer à Caraval, le mystérieux jeu organisé par le légendaire Légende. Avec Donatella et Julian, un marin énigmatique, elle rejoint l’île des Songes et découvre un univers où les apparences sont trompeuses et où chaque participant peut cacher ses véritables intentions. Mais lorsque Donatella disparaît, le jeu prend une tournure beaucoup plus personnelle. Scarlett doit alors résoudre les énigmes de Caraval tout en essayant de distinguer la réalité de l’illusion.
                 </p>
             </section>
 
             <section class="book-info">
                 <h2>Informations sur le livre</h2>
-                <p><strong>Auteur :</strong> Shay carrot</p>
-                <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
+                <p><strong>Auteur :</strong> Stephanie Garber</p>
+                <p><strong>Catégorie :</strong> Thriller </p>
+                <p><strong>Nombre de pages :</strong> 310</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
             </section>
@@ -2163,24 +1714,19 @@
 
             <section class="product">
                 <div class="product-image">
-                    <img src="image/THR5" alt="Couverture du livre">
+                    <img src="image/THR2.jpeg" alt="Couverture du livre">
                 </div>
 
                 <div class="product-info">
-                    <h1>Le livre d'Azrael</h1>
-                    <p class="author">Par : Shay Carrot</p>
+                    <h1>After the light </h1>
+                    <p class="author">Par : Catherine Hunter</p>
                     <p class="price">15 000 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                        Après la mort de sa sœur Rosheen, Von découvre que celle-ci enquêtait sur les secrets de leur famille. En suivant ses traces jusqu’en Irlande, elle va révéler une histoire familiale profondément enfouie.
                     </p>
 
                     <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                        
                     </div>
 
                     <button class="add-cart">Ajouter au panier</button>
@@ -2190,20 +1736,15 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+                    Von Garrison mène une vie tranquille au Canada lorsqu’elle apprend la mort soudaine de sa sœur Rosheen à New York. Peu après, elle découvre que Rosheen travaillait sur un projet consacré à leur histoire familiale et lui demande de poursuivre ses recherches. Von se rend alors en Irlande pour enquêter sur leur grand-mère Deirdre, une jeune femme qui avait fui son pays au début du XXe siècle. Au fil de ses recherches, elle découvre des secrets, des blessures et des événements qui ont marqué plusieurs générations de la famille Garrison. Entre l’Irlande, le Canada, New York et les souvenirs de la Seconde Guerre mondiale, Von tente de comprendre son passé et celui de sa famille.
                 </p>
             </section>
 
             <section class="book-info">
                 <h2>Informations sur le livre</h2>
-                <p><strong>Auteur :</strong> Shay carrot</p>
-                <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
+                <p><strong>Auteur :</strong> Catherine Hunter</p>
+                <p><strong>Catégorie :</strong> Thriller </p>
+                <p><strong>Nombre de pages :</strong> 510</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
             </section>
@@ -2218,11 +1759,11 @@
 
             <section class="product">
                 <div class="product-image">
-                    <img src="image/THR5" alt="Couverture du livre">
+                    <img src="image/THR3.jpeg" alt="Couverture du livre">
                 </div>
 
                 <div class="product-info">
-                    <h1>Le livre d'Azrael</h1>
+                    <h1>Shevan's creed</h1>
                     <p class="author">Par : Shay Carrot</p>
                     <p class="price">15 000 FCFA</p>
                     <p class="description">
@@ -2233,9 +1774,7 @@
                     </p>
 
                     <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                        
                     </div>
 
                     <button class="add-cart">Ajouter au panier</button>
@@ -2257,7 +1796,7 @@
             <section class="book-info">
                 <h2>Informations sur le livre</h2>
                 <p><strong>Auteur :</strong> Shay carrot</p>
-                <p><strong>Catégorie :</strong> Dark Romance</p>
+                <p><strong>Catégorie :</strong> Thriller </p>
                 <p><strong>Nombre de pages :</strong> 1100</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
@@ -2272,24 +1811,19 @@
 
             <section class="product">
                 <div class="product-image">
-                    <img src="image/THR5" alt="Couverture du livre">
+                    <img src="image/trill18.jpeg" alt="Couverture du livre">
                 </div>
 
                 <div class="product-info">
-                    <h1>Le livre d'Azrael</h1>
-                    <p class="author">Par : Shay Carrot</p>
+                    <h1>Once Upon a broken heart </h1>
+                    <p class="author">Par : Stephanie Garber</p>
                     <p class="price">15 000 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                        Évangeline croit encore aux fins heureuses… jusqu’à ce que l’homme qu’elle aime soit sur le point d’en épouser une autre. Désespérée, elle conclut un pacte avec le mystérieux Prince de Cœur, sans se douter du prix réel de son marché.
                     </p>
 
                     <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                        
                     </div>
 
                     <button class="add-cart">Ajouter au panier</button>
@@ -2299,20 +1833,15 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+                    Évangeline Fox a toujours cru au grand amour et aux histoires qui se terminent bien. Mais lorsque l’homme qu’elle aime annonce son mariage avec une autre, son monde s’écroule. Convaincue que la magie peut encore changer son destin, elle fait appel au Prince de Cœur, un immortel aussi fascinant que dangereux. En échange de son aide, il lui demande trois baisers, à donner aux personnes et aux moments de son choix. Évangeline accepte, mais comprend rapidement qu’un pacte avec un immortel ne se déroule jamais comme prévu. Alors qu’elle découvre les secrets du royaume magique qui l’entoure, elle réalise que son marché pourrait l’entraîner dans une aventure bien plus dangereuse qu’elle ne l’imaginait.
                 </p>
             </section>
 
             <section class="book-info">
                 <h2>Informations sur le livre</h2>
-                <p><strong>Auteur :</strong> Shay carrot</p>
-                <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
+                <p><strong>Auteur :</strong> Stepanie Garber</p>
+                <p><strong>Catégorie :</strong> Thriller </p>
+                <p><strong>Nombre de pages :</strong> 628 </p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
             </section>
@@ -2325,24 +1854,19 @@
 
             <section class="product">
                 <div class="product-image">
-                    <img src="image/THR5" alt="Couverture du livre">
+                    <img src="image/The Teacher.jpeg" alt="Couverture du livre">
                 </div>
 
                 <div class="product-info">
-                    <h1>Le livre d'Azrael</h1>
-                    <p class="author">Par : Shay Carrot</p>
-                    <p class="price">15 000 FCFA</p>
+                    <h1>The teacher </h1>
+                    <p class="author">Par : Freida McFadden </p>
+                    <p class="price">16 700 FCFA</p>
                     <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
+                        Eve mène une vie parfaite entre son mari et son métier de professeure. Mais lorsqu’une élève au passé mystérieux arrive dans sa classe, Eve découvre que derrière les apparences se cachent des secrets capables de bouleverser sa vie.
                     </p>
 
                     <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                        
                     </div>
 
                     <button class="add-cart">Ajouter au panier</button>
@@ -2352,20 +1876,15 @@
             <section class="details">
                 <h2>Description</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
+                    Eve mène une existence tranquille avec son mari Nate, professeur dans le même lycée qu’elle. Tout semble parfait jusqu’à ce qu’elle retrouve dans sa classe Addie, une élève au centre d’un scandale qui a secoué l’établissement l’année précédente. Tout le monde affirme qu’Addie est une menteuse capable de détruire la vie des autres. Pourtant, Eve comprend rapidement que l’histoire est bien plus complexe qu’elle n’en a l’air. Alors qu’elle cherche à découvrir ce qu’Addie cache réellement, de nouveaux secrets commencent à émerger. Entre mensonges, manipulation, vengeance et révélations, Eve réalise qu’elle ne peut faire confiance à personne.
                 </p>
             </section>
 
             <section class="book-info">
                 <h2>Informations sur le livre</h2>
-                <p><strong>Auteur :</strong> Shay carrot</p>
-                <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
+                <p><strong>Auteur :</strong> Freida McFadden</p>
+                <p><strong>Catégorie :</strong>Fantasy </p>
+                <p><strong>Nombre de pages :</strong> 421</p>
                 <p><strong>Langue :</strong> Français</p>
                 <p><strong>Format :</strong> Broché</p>
             </section>
@@ -2379,7 +1898,7 @@
 
             <section class="product">
                 <div class="product-image">
-                    <img src="image/THR5" alt="Couverture du livre">
+                    <img src="image/Abandoned Bonds (The Iolite Academy).jpeg" alt="Couverture du livre">
                 </div>
 
                 <div class="product-info">
@@ -2394,9 +1913,7 @@
                     </p>
 
                     <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
+                        
                     </div>
 
                     <button class="add-cart">Ajouter au panier</button>
@@ -2431,7 +1948,7 @@
 
             <section class="product">
                 <div class="product-image">
-                    <img src="image/THR5" alt="Couverture du livre">
+                    <img src="image/télécharger (8).jpeg" alt="Couverture du livre">
                 </div>
 
                 <div class="product-info">
@@ -2484,7 +2001,7 @@
 
             <section class="product">
                 <div class="product-image">
-                    <img src="image/THR5" alt="Couverture du livre">
+                    <img src="image/November 9 de Collen Hoover.jpeg" alt="Couverture du livre">
                 </div>
 
                 <div class="product-info">
@@ -2538,7 +2055,7 @@
 
             <section class="product">
                 <div class="product-image">
-                    <img src="image/THR5" alt="Couverture du livre">
+                    <img src="image/13 Page Turners You Seriously Won’t Be Able To Stop Reading.jpeg" alt="Couverture du livre">
                 </div>
 
                 <div class="product-info">
@@ -2591,7 +2108,7 @@
 
             <section class="product">
                 <div class="product-image">
-                    <img src="image/FANTA2jpeg" alt="Couverture du livre">
+                    <img src="image/The Housemaid by Freida McFadden.jpeg" alt="Couverture du livre">
                 </div>
 
                 <div class="product-info">
@@ -2643,7 +2160,7 @@
 
             <section class="product">
                 <div class="product-image">
-                    <img src="image/FANTA2.jpeg" alt="Couverture du livre">
+                    <img src="image/FANTA1.jpeg" alt="Couverture du livre">
                 </div>
 
                 <div class="product-info">
@@ -2697,6 +2214,59 @@
 
             <section class="product">
                 <div class="product-image">
+                    <img src="image/FANTA2.jpeg" alt="Couverture du livre">
+                </div>
+
+                <div class="product-info">
+                    <h1>Le livre d'Azrael</h1>
+                    <p class="author">Par : Shay Carrot</p>
+                    <p class="price">15 000 FCFA</p>
+                    <p class="description">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                        Enim ratione tempora ullam fugiat delectus,
+                        non ut aliquam cum quas iusto totam quam adipisci
+                        sunt molestiae eum veritatis nemo voluptas soluta..
+                    </p>
+
+                    <div class="quantity">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+
+                    <button class="add-cart">Ajouter au panier</button>
+                </div>
+            </section>
+
+            <section class="details">
+                <h2>Description</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
+                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
+                    Nam, illum. Nulla, soluta id!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
+                    animi cupiditate debitis iusto illo? Harum, nemo.
+                </p>
+            </section>
+
+            <section class="book-info">
+                <h2>Informations sur le livre</h2>
+                <p><strong>Auteur :</strong> Shay carrot</p>
+                <p><strong>Catégorie :</strong> Dark Romance</p>
+                <p><strong>Nombre de pages :</strong> 1100</p>
+                <p><strong>Langue :</strong> Français</p>
+                <p><strong>Format :</strong> Broché</p>
+            </section>
+
+        </section>
+
+
+
+        <section class="product-page" id="fan8">
+
+            <section class="product">
+                <div class="product-image">
                     <img src="image/FANTA3.jpeg" alt="Couverture du livre">
                 </div>
 
@@ -2746,7 +2316,7 @@
 
 
 
-         <section class="product-page" id="fan8">
+        <section class="product-page" id="fan9">
 
             <section class="product">
                 <div class="product-image">
@@ -2764,11 +2334,7 @@
                         sunt molestiae eum veritatis nemo voluptas soluta..
                     </p>
 
-                    <div class="quantity">
-                        <button>-</button>
-                        <span>1</span>
-                        <button>+</button>
-                    </div>
+                
 
                     <button class="add-cart">Ajouter au panier</button>
                 </div>
@@ -2799,7 +2365,8 @@
 
 
 
-         <section class="product-page" id="fan9">
+
+        <section class="product-page" id="fan10">
 
             <section class="product">
                 <div class="product-image">
@@ -2817,7 +2384,6 @@
                         sunt molestiae eum veritatis nemo voluptas soluta..
                     </p>
 
-                  
 
                     <button class="add-cart">Ajouter au panier</button>
                 </div>
@@ -2845,90 +2411,6 @@
             </section>
 
         </section>
-
-
-
-
-         <section class="product-page" id="fan10">
-
-            <section class="product">
-                <div class="product-image">
-                    <img src="image/FANTA1.jpeg" alt="Couverture du livre">
-                </div>
-
-                <div class="product-info">
-                    <h1>Le livre d'Azrael</h1>
-                    <p class="author">Par : Shay Carrot</p>
-                    <p class="price">15 000 FCFA</p>
-                    <p class="description">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                        Enim ratione tempora ullam fugiat delectus,
-                        non ut aliquam cum quas iusto totam quam adipisci
-                        sunt molestiae eum veritatis nemo voluptas soluta..
-                    </p>
-
-
-                    <button class="add-cart">Ajouter au panier</button>
-                </div>
-            </section>
-
-            <section class="details">
-                <h2>Description</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
-                </p>
-            </section>
-
-            <section class="book-info">
-                <h2>Informations sur le livre</h2>
-                <p><strong>Auteur :</strong> Shay carrot</p>
-                <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
-                <p><strong>Langue :</strong> Français</p>
-                <p><strong>Format :</strong> Broché</p>
-            </section>
-
-        </section>
-
-
-                        <span>1</span>
-                        <button>+</button>
-                    </div>
-
-                    <button class="add-cart">Ajouter au panier</button>
-                </div>
-            </section>
-
-            <section class="details">
-                <h2>Description</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti pariatur fugiat quia quisquam temporibus!
-                    Ullam dolores soluta nisi distinctio animi magni dolorum dicta nobis consequatur.
-                    Nam, illum. Nulla, soluta id!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Rerum quos hic obcaecati voluptate aperiam aut ipsum culpa, molestias ut facere sed quam dicta,
-                    animi cupiditate debitis iusto illo? Harum, nemo.
-                </p>
-            </section>
-
-            <section class="book-info">
-                <h2>Informations sur le livre</h2>
-                <p><strong>Auteur :</strong> Shay carrot</p>
-                <p><strong>Catégorie :</strong> Dark Romance</p>
-                <p><strong>Nombre de pages :</strong> 1100</p>
-                <p><strong>Langue :</strong> Français</p>
-                <p><strong>Format :</strong> Broché</p>
-            </section>
-
-        </section>
-
-
-
 
     </main>
 
@@ -2936,38 +2418,64 @@
     <!-- JE DEBUTE LE JS ICI -->
 
 <script>
-
-let panier = []; 
+let panier = JSON.parse(localStorage.getItem("panier")) || []; 
 
 const Ajouteraupanier = document.querySelectorAll(".add-cart");
 
-    Ajouteraupanier.forEach(function(bouton) {
+Ajouteraupanier.forEach(function(bouton) {
     bouton.addEventListener("click", function(){
-    console.log("j'ai cliqué");
+        console.log("j'ai cliqué");
+        
+        const product = bouton.closest(".product");
+        const product_info = product.querySelector(".product-info");
+        
+        const titre = product_info.querySelector("h1");
+        const auteur = product_info.querySelector(".author");
+        const prix = product_info.querySelector(".price");
+        const image = product.querySelector("img");
+        
+        const bookInfo = bouton.closest(".product-page").querySelector(".book-info");
+        const categorie = bookInfo.querySelectorAll("p")[1].textContent;
+        const pages = bookInfo.querySelectorAll("p")[2].textContent;
+        const format = bookInfo.querySelectorAll("p")[4].textContent;
+        
+        const articleExiste = panier.find(article => article.nom === titre.textContent);
 
-    const carte = bouton.closest(".product-info");
-    const titre = carte.querySelector("h1");
-    const prix = carte.querySelector(".price");
+        if (articleExiste) {
+            articleExiste.quantité += 1;
+        } else {
+            panier.push({ 
+                nom: titre.textContent,
+                auteur: auteur.textContent,
+                prix: prix.textContent,
+                image: image.src,
+                categorie: categorie,
+                pages: pages,
+                format: format,
+                quantité: 1
+            });
+        }
+        
+        localStorage.setItem("panier", JSON.stringify(panier));
+        AjoutersurPanier();  // ← APPEL ICI !
+    }); 
+});  
 
-    const product = bouton.closest(".product");
-    const image = product.querySelector("img");
-    const articleExiste = panier.find(article => article.nom === titre.textContent);
+// Appel au chargement
+AjoutersurPanier();
 
-    if (articleExiste ) {
-        articleExiste.quantité+=1
+// Fonction pour mettre à jour le badge
+function AjoutersurPanier(){
+    let panier = JSON.parse(localStorage.getItem("panier")) || [];
+    let total = panier.reduce((acc, article) => acc + article.quantité, 0);
+    const icon = document.getElementById("icon-panier");
+
+    if(total > 0) {
+        icon.textContent = total;
     } else {
-        panier.push({  
-            nom: titre.textContent,
-            prix: prix.textContent,
-            image:image.src,
-            quantité:1
-        });
+        icon.textContent = "";
     }
-    
-    localStorage.setItem("panier",JSON.stringify(panier));
-    
-    } ); 
-    });     
+}   
 </script>
 
 </body>

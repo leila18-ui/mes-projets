@@ -1,65 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MA PAGE CHECKOUT</title>
+    <title>Checkout — NovaBooks</title>
+    <script src="panier.js" defer></script>
     <link rel="stylesheet" href="checkout.css">
 </head>
 <body>
 
-    <section class="partie1">
-        <h2><a href="index.html">NovaBooks</a></h2>
-        <h5>Des histoires qui restent</h5>
+    <header class="partie1">
+        <div class="brand">
+            <h2><a href="index.html">NovaBooks</a></h2>
+            <h5>Des histoires qui restent</h5>
+        </div>
 
         <nav>
             <ul>
-                <li><a href="about.html">A propos</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="cart.html">cart</a></li>
-                <li><a href="checkout.html">Chekout</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="products.html">Produits</a></li>
+                <li class="panier">
+                    <a href="cart.html">🛒<span id="icon-panier"></span></a>
+                </li>
+                <li><a href="checkout.html">Checkout</a></li>
             </ul>
         </nav>
-    </section>
+    </header>
 
     <section class="form">
+        <form id="checkout-form">
 
-        <form action="">
+            <fieldset class="info">
+                <legend>Informations personnelles</legend>
 
-            <section class="info">
-                <h2>Informations personnelles</h2>
-                <br>
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" required>
 
-                <label for="nom">Nom</label> <br>
-                <input type="text" id="nom" name="nom" placeholder="Entrez votre nom"> <br>
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" required>
 
-                <label for="prenom">Prénom</label> <br>
-                <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom"> <br>
+                <label for="tel">Téléphone</label>
+                <input type="tel" id="tel" name="tel" placeholder="Entrez votre numéro" required>
 
-                <label for="tel">Téléphone</label> <br>
-                <input type="text" id="tel" name="cel" placeholder="Entrez votre numéro"> <br>
+                <label for="mail">Email</label>
+                <input type="email" id="mail" name="mail" placeholder="Entrez votre email" required>
+            </fieldset>
 
-                <label for="mail">mail</label> <br>
-                <input type="email" id="mail" name="mail" placeholder="Entrez votre mail"> <br>
+            <fieldset class="livraison">
+                <legend>Adresse de livraison</legend>
 
-                <button type="button ">Confirmer</button>
-            </section>
+                <label for="adresse">Adresse</label>
+                <input type="text" id="adresse" name="adresse" placeholder="Entrez votre adresse" required>
 
-            <section class="livraison">
-                <h2>Adresse de livraison</h2>
-                <br>
+                <label for="ville">Ville</label>
+                <input type="text" id="ville" name="ville" placeholder="Entrez votre ville" required>
+            </fieldset>
 
-                <label for="adresse">adresse</label> <br>
-                <input type="text" id="adresse" name="Adresse" placeholder="Entrez votre adresse"> <br>
-
-                <label for="ville">Ville</label> <br>
-                <input type="text" id="ville" name="ville" placeholder="Entrez votre Ville"> <br>
-
-                <button type="submit"><a href="succes.html">Valider</a></button>
-            </section>
+            <!-- UN SEUL BOUTON, en dehors des fieldsets -->
+            <button type="submit" class="btn-valider">Valider la commande</button>
 
         </form>
-
     </section>
 
 </body>

@@ -1,343 +1,518 @@
-/* On enlève les marges par défaut du navigateur */
+/* ===== GOOGLE FONTS ===== */
+@import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+
+/* ===== RESET ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
-section.partie1 {
-    /* Couleur de fond noir */
-    background-color:black;
-    
-    /* Espacement intérieur */
-    padding: 15px 40px;
-    
-    /* Position sticky */
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    
-    /* Ombre pour séparation */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    
-    /* Affichage flex */
-    display: flex;
-    
-    /* Aligner verticalement */
-    align-items: center;
-    
-    /* Espace entre logo et nav */
-    justify-content: space-between;
+/* ===== BODY ===== */
+body {
+    font-family: 'Georgia', serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    min-height: 100vh;
 }
 
-/* LOGO - TITRE h4 */
-section.partie1 h4 {
-    /* Couleur rose/rose clair */
-    color:#ff6b9d;
-    
-    /* Taille grande */
+/* =========================================
+   HEADER (partie1)
+   ========================================= */
+.partie1 {
+    background-color: #0f0f0f;
+    padding: 15px 40px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.partie1 h4 {
     font-size: 30px;
-    
-    /* Poids */
     font-weight: lighter;
-    
-    /* Espacement */
-    margin-right: 30px;
 }
 
 .partie1 h4 a {
-    text-decoration:none;
-    color:#ff6b9d;
-    
-}
-
-/* SOUS-TITRE h5 (tagline) */
-section.partie1 h5 {
-    /* Couleur grise */
-    color:#ff6b9d;
-    
-    /* Taille petite */
-    font-size: 11px;
-    
-    /* Lettres majuscules */
-    text-transform: uppercase;
-    
-    /* Espacement entre lettres */
-    letter-spacing: 2px;
-}
-
-/* NAVIGATION */
-nav {
-    /* Affichage flex */
-    display: flex;
-    
-    /* Aligner au centre */
-    align-items: center;
-    
-    /* Espace entre éléments */
-    gap: 40px;
-}
-
-/* LISTE DE NAVIGATION */
-nav ul {
-    /* Affichage en ligne */
-    display: flex;
-    
-    /* Aligner verticalement */
-    align-items: center;
-    
-    /* Enlever les puces */
-    list-style: none;
-    
-    /* Espace entre les liens */
-    gap: 30px;
-}
-
-/* LIENS DE NAVIGATION */
-nav a {
-    /* Couleur blanche */
-    color: white;
-    
-    /* Enlever la décoration */
+    color: #ff6b9d;
     text-decoration: none;
-    
-    /* Taille */
-    font-size: 15px;
-    
-    /* Transition smooth */
     transition: color 0.3s ease;
 }
 
-/* EFFET HOVER SUR LES LIENS */
-nav a:hover {
-    /* Couleur rose */
+.partie1 h4 a:hover {
+    color: #ff8fb3;
+}
+
+.partie1 h5 {
     color: #ff6b9d;
-}
-
-
-/* Style général de la page */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-    color: #222;
-}
-
-
-.product-page {
-    scroll-margin-top: 100px; /* évite que le header sticky cache le haut du bloc visé */
-    padding-bottom: 40px;
-    border-bottom: 2px dashed #ffd1df;
-}
-
-.product-page:last-of-type {
-    border-bottom: none;
-}
-
-.product {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    max-width: 1000px;
-    margin: 50px auto;
-
-    /* Couleur du bloc */
-    background: linear-gradient(135deg, #ffffff, #fff0f5);
-
-    padding: 40px;
-    border-radius: 20px;
-
-    /* Ombre */
-    box-shadow: 0 10px 30px rgba(255, 107, 157, 0.15);
-
-    /* Petite bordure rose */
-    border: 1px solid #ffd1df;
-}
-
-.product-image img {
-    width: 300px;
-    height: 400px;
-    object-fit: cover;
-
-    /* Coins légèrement arrondis */
-    border-radius: 10px;
-
-    /* Ombre autour de la couverture */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-
-    /* Petite bordure rose */
-    border: 3px solid #ffd1df;
-
-    /* Animation au survol */
-    transition: transform 0.3s ease;
-}
-
-.product-image img:hover {
-    transform: scale(1.03);
-}
-
-
-.product-info {
-    flex: 1;
-}
-
-
-.product-info h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-
-    /* Couleur du titre */
-    color: #222;
-
-    /* Écriture plus élégante */
+    font-size: 11px;
+    text-transform: uppercase;
     letter-spacing: 2px;
 }
 
-
-.author {
-    font-size: 18px;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-
-.price {
-    font-size: 18px;
-    font-weight: lighter;
-    margin-bottom: 20px;
-
-    /* Le prix ressort en rose */
-    color: #d2a7b5;
-}
-
-
-.quantity {
+nav ul {
     display: flex;
     align-items: center;
-    gap: 15px;
+    list-style: none;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff6b9d;
+}
+
+.panier {
+    position: relative;
+}
+
+#icon-panier {
+    position: absolute;
+    top: -10px;
+    right: -12px;
+    background-color: pink;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* =========================================
+   AFFICHER SEULEMENT LE PRODUIT CIBLÉ
+   ========================================= */
+.product-page {
+    display: none;
+}
+
+.product-page:target {
+    display: block;
+}
+
+/* =========================================
+   PAGE PRODUIT
+   ========================================= */
+.product-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 30px 60px;
+    scroll-margin-top: 20px;
+}
+
+/* ===== BLOC PRODUIT (image + infos) ===== */
+.product {
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 40px;
+    align-items: flex-start;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: 30px;
+}
+
+.product-image {
+    width: 100%;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-info h1 {
+    font-size: 34px;
+    color: #0f0f0f;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+.product-info .author {
+    color: #888;
+    font-size: 15px;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.product-info .price {
+    color: #ff6b9d;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.product-info .description {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.7;
     margin-bottom: 25px;
 }
 
-.quantity button {
-    width: 35px;
-    height: 35px;
-    border: 1px solid #ccc;
-    background-color: white;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.quantity span {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-/* BOUTON "Ajouter au panier" — réécrit proprement,
-   l'ancienne règle avait plusieurs couleurs collées dans
-   un commentaire mal fermé qui cassait le CSS. */
+/* ===== BOUTON AJOUTER AU PANIER ===== */
 .add-cart {
-    padding: 14px 30px;
-    border: none;
-    background-color: #ff6b9d;
+    background: linear-gradient(135deg, #ff6b9d 0%, #d86d91 100%);
     color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 700;
+    font-family: 'Georgia', serif;
     cursor: pointer;
-    border-radius: 25px;
-    box-shadow: 0 5px 15px rgba(255, 107, 157, 0.3);
     transition: all 0.3s ease;
+    align-self: flex-start;
 }
 
 .add-cart:hover {
-    background-color: #222;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #e55a8a 0%, #c15a7d 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(255, 107, 157, 0.4);
 }
 
-/* Section description (fusionnée : il y avait deux règles .details
-   qui s'écrasaient l'une l'autre, gardé la version avec bordure rose) */
+.add-cart:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 12px rgba(255, 107, 157, 0.3);
+}
+
+/* ===== QUANTITÉ (si présente) ===== */
+.quantity {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.quantity button {
+    background: #ff6b9d;
+    color: white;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease;
+}
+
+.quantity button:hover {
+    background: #e55a8a;
+}
+
+.quantity span {
+    font-weight: bold;
+    font-size: 16px;
+    min-width: 26px;
+    text-align: center;
+}
+
+/* ===== DESCRIPTION DÉTAILLÉE ===== */
 .details {
-    max-width: 1000px;
-    margin: 30px auto;
-
-    /* Fond légèrement rosé */
-    background: linear-gradient(135deg, #ffffff, #fff5f8);
-
-    padding: 30px 40px;
-    border-radius: 15px;
-
-    /* Petite bordure */
-    border-left: 5px solid #ff6b9d;
-
-    /* Ombre légère */
-    box-shadow: 0 5px 20px rgba(255, 107, 157, 0.10);
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .details h2 {
     font-size: 24px;
-    margin-bottom: 15px;
+    color: #0f0f0f;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #ffe0eb;
+    font-family: "Mea Culpa", cursive;
+    font-weight: 400;
 }
 
 .details p {
-    line-height: 1.7;
     color: #555;
+    font-size: 15px;
+    line-height: 1.8;
 }
 
-
-/* Informations sur le livre */
+/* ===== INFORMATIONS SUR LE LIVRE ===== */
 .book-info {
-    max-width: 1000px;
-    margin: 30px auto;
-
-    /* Fond légèrement rosé */
-    background: linear-gradient(135deg, #ffffff, #fff5f8);
-
-    padding: 30px 40px;
-    border-radius: 15px;
-
-    /* Petite bordure */
-    border-left: 5px solid #ff6b9d;
-
-    /* Ombre légère */
-    box-shadow: 0 5px 20px rgba(255, 107, 157, 0.10);
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
 .book-info h2 {
     font-size: 24px;
+    color: #0f0f0f;
     margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #ffe0eb;
+    font-family: "Mea Culpa", cursive;
+    font-weight: 400;
 }
 
 .book-info p {
-    margin-bottom: 10px;
     color: #555;
+    font-size: 15px;
+    padding: 8px 0;
+    line-height: 1.6;
 }
 
-/* Adaptation pour les petits écrans */
-@media (max-width: 768px) {
+.book-info strong {
+    color: #0f0f0f;
+    font-weight: 700;
+    display: inline-block;
+    min-width: 130px;
+}
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+/* ===== TABLETTE (< 1024px) ===== */
+@media (max-width: 1024px) {
+    .partie1 {
+        padding: 12px 25px;
+    }
+
+    .partie1 h4 {
+        font-size: 26px;
+    }
+
+    nav ul {
+        gap: 22px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .product-page {
+        padding: 30px 20px 50px;
+    }
 
     .product {
-        flex-direction: column;
-        margin: 20px;
-        padding: 25px;
+        grid-template-columns: 250px 1fr;
         gap: 30px;
-    }
-
-    .product-image img {
-        width: 220px;
-        height: 300px;
-    }
-
-    .product-info {
-        width: 100%;
+        padding: 25px;
     }
 
     .product-info h1 {
         font-size: 28px;
     }
 
+    .product-info .price {
+        font-size: 24px;
+    }
+}
+
+/* ===== MOBILE (< 768px) ===== */
+@media (max-width: 768px) {
+    /* --- HEADER empilé --- */
+    .partie1 {
+        flex-direction: column;
+        gap: 12px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .partie1 h4 {
+        font-size: 24px;
+    }
+
+    .partie1 h5 {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav ul {
+        gap: 15px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    /* --- PRODUIT : empilé --- */
+    .product-page {
+        padding: 20px 15px 40px;
+    }
+
+    .product {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .product-image {
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    .product-info {
+        text-align: center;
+        align-items: center;
+    }
+
+    .product-info h1 {
+        font-size: 24px;
+    }
+
+    .product-info .author {
+        font-size: 14px;
+    }
+
+    .product-info .price {
+        font-size: 22px;
+    }
+
+    .product-info .description {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .add-cart {
+        align-self: center;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* --- DÉTAILS et INFOS --- */
     .details,
     .book-info {
-        margin: 20px;
-        padding: 25px;
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    .details h2,
+    .book-info h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .details p,
+    .book-info p {
+        font-size: 14px;
+    }
+
+    .book-info strong {
+        min-width: 110px;
+        font-size: 13px;
+    }
+}
+
+/* ===== PETIT MOBILE (< 480px) ===== */
+@media (max-width: 480px) {
+    .partie1 {
+        padding: 12px 10px;
+    }
+
+    .partie1 h4 {
+        font-size: 20px;
+    }
+
+    .partie1 h5 {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    #icon-panier {
+        width: 16px;
+        height: 16px;
+        font-size: 9px;
+        top: -6px;
+        right: -10px;
+    }
+
+    .product-page {
+        padding: 15px 10px 30px;
+    }
+
+    .product {
+        padding: 15px;
+    }
+
+    .product-image {
+        max-width: 220px;
+    }
+
+    .product-info h1 {
+        font-size: 20px;
+    }
+
+    .product-info .price {
+        font-size: 20px;
+    }
+
+    .product-info .description {
+        font-size: 13px;
+    }
+
+    .add-cart {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+
+    .details,
+    .book-info {
+        padding: 15px;
+    }
+
+    .details h2,
+    .book-info h2 {
+        font-size: 18px;
+    }
+
+    .details p,
+    .book-info p {
+        font-size: 13px;
+    }
+
+    .book-info strong {
+        display: block;
+        margin-bottom: 4px;
+        min-width: auto;
     }
 }

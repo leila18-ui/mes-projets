@@ -1,42 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAGE CONTACT </title>
+    <title>Connexion — NovaBooks</title>
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
 
+        <form action="" method="post" class="login-form">
 
-    <form action="">
+            <h2 class="login-title">Connexion</h2>
 
-    <h2>mail</h2>
-    <input type="text" name="nom" placeholder=" ----  "> <br>
-    <h2>mot de passe</h2>
-    <input type="text" name="Adresse" placeholder=" ---- "> <br>
-    
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="exemple@mail.com" required>
+            </div>
 
-    <div class="souvenir">
-    <label>
-        <input type="checkbox" name="souvenir">
-        Se souvenir de moi
-    </label>
-    </div>
+            <div class="form-group">
+                <label for="password">Mot de passe</label>
+                <input type="password" id="password" name="password" placeholder="••••••••" required>
+            </div>
 
+            <div class="souvenir">
+                <label>
+                    <input type="checkbox" name="souvenir">
+                    <span>Se souvenir de moi</span>
+                </label>
+            </div>
 
-    <div class="connexion">
-    <button type="submit"><a href="index.html">Se connecter</a></button>
-    </div>
+            <div class="connexion">
+                <button type="submit">Se connecter</button>
+            </div>
 
+            <div class="liens">
+                <a href="#" class="mdp">Mot de passe oublié ?</a>
+                <a href="#" class="comp">Créer un compte</a>
+            </div>
 
-    <a href="" class="mdp"> Mot de passe oublié?</a> <br>
-    <a href=""  class="comp">Créer un compte</a>
-    
+        </form>
 
-
-
-    </form>
-
+    <script src="contact.js"></script>
 </body>
 </html>

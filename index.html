@@ -1,217 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MA PAGE ACCEUIL</title>
+    <title>NovaBooks — Votre librairie en ligne</title>
     <link rel="stylesheet" href="index.css">
+    <script src="panier.js" defer></script>
+    <script src="cart.js" defer></script>
 </head>
 
 <body>
 
-<section class="partie1">
-    <h2>NovaBooks</h2>
-    <h5>Des histoires qui restent</h5>
+<header class="partie1">
+    <div class="brand">
+        <h2><a href="index.html">NovaBooks</a></h2>
+        <h5>Des histoires qui restent</h5>
+    </div>
 
-    <nav> 
-    <ul>
-        <li><a href="products.html"> Products </a></li>
-        <li><a href="contact.html"> Connexion  </a></li>
-        <li><a href="cart.html">cart</a></li>
-        <li><a href="about.html">   A propos</a></li>
-    </ul>   
+    <nav>
+        <ul>
+            <li><a href="products.html">Produits</a></li>
+            <li><a href="contact.html">Connexion</a></li>
+            <li class="panier">
+                <a href="cart.html">🛒<span id="icon-panier"></span></a>
+            </li>
+            <li><a href="about.html">À propos</a></li>
+        </ul>
     </nav>
-</section>
-  
+</header>
 
-   <main>
-<section class="partie2">
+<main>
 
- 
+    <!-- ===== HERO ===== -->
+    <section class="partie2">
+        <p>Votre librairie en ligne</p>
+        <h1>Plongez dans des <br>histoires <strong>intenses</strong></h1>
+        <p>Romance, Dark Romance, Fantasy, Thriller...</p>
+        <p>Trouvez le livre qui fera battre votre cœur</p>
 
-    <p>Votre librairie en ligne</p>
-    <h1>Plongez dans des <br>
-    histoires <strong>intenses</strong></h1>
+        <a href="products.html"><h5>Découvrir la boutique</h5></a>
+    </section>
 
-    <p>Romance,Dark Romance,Fantasy,Thriller... </p>
-    <p> Trouvez le livre qui fera battre votre coeur </p>
-    <!-- Modifier ici  -->
-
-    <a href="products.html"><h5> Découvrir la boutique </h5></a>
-
-</section>
-
-    
-<div class="exclu">
-    <h5>Nos coups de coeurs </h5>
-    <h3>Les plus populaires</h3>
-</div>
-    
-    
-<section class="image">
-
-        <div class="livre"> 
-            <img src="image/téléchargement (10).jpeg" alt="Captive "> 
-            <p> <strong>Captive</strong> <br> de Sarah Rivens</p>
-            <span>11.500FCFA</span>
-            <h3><a href="product.html#vendetta" class="plus">Voir plus</a></h3>
-        </div>
-        
-        
-        <div class="livre"> 
-            <img src="image/Home - Ali Hazelwood.jpeg" alt=""> 
-            <p> <strong>Leonid Petrov</strong> <br>
-                de Nanou AD  </p>
-            <span>13.500FCFA</span>
-            <h3><a href="product.html#love" class="plus">Voir plus </a></h3>
-        </div>
-        
-        
-        <div class="livre"> 
-            <img src="image/Uncovering Rose_ Special Edition Cover - A Curvy Girl Mafia Second Chance Romance (The Sinful Secrets Series).jpeg" alt=""> 
-            <p> <strong> Bordeline </strong> <br>de Joyce KItten   </p>
-            <span>12.000FCFA</span>
-            <h3><a href="product.html#UNCOVE" class="plus">Voir plus</a></h3>
-        </div>
-        
-        
-        <div class="livre"> 
-            <img src="image/birth.jpeg" alt=""> 
-            <p> <strong>Lakestone</strong> de Sarah Riens </p>
-            <span>13.500FCFA</span>
-            <h3><a href="product.html#birth" class="plus">Voir plus</a></h3>
-        </div>
-        
-
-        <div class="livre"> 
-            <img src="image/Mad Majesty.jpeg" alt=""> 
-            <p> <strong>Lakestone</strong> de Sarah Riens </p>
-            <span>13.500FCFA</span>
-            <h3><a href="product.html#mad" class="plus">Voir plus</a></h3>
-        </div>
-
-       
-
-        <div class="livre"> 
-            <img src="image/Wild Love NA.jpeg" alt=""> 
-            <p> <strong>Lakestone</strong> de Sarah Riens </p>
-            <span>13.500FCFA</span>
-            <h3><a href="product.html#wild" class="plus">Voir plus</a></h3>
-        </div>
-
-        
-        <div class="livre"> 
-            <img src="image/The Wrong Bride _ Maura, Catharina, Jaubert, Agnès_ Amazon_fr_ Livres.jpeg" alt=""> 
-            <p> <strong>Lakestone </strong> de Sarah Riens </p>
-            <span>13.500FCFA</span>
-            <h3><a href="product.html#wrong" class="plus">Voir plus</a></h3>
-        </div>
-    
-    
-    
-        <div class="livre"> 
-            <img src="image/THR4" alt=""> 
-            <p> <strong>Lakestone </strong> de Sarah Riens </p>
-            <span>13.500FCFA</span>
-            <h3><a href="product.html#thr9" class="plus">Voir plus</a></h3>
-        </div>
-
-        <div class="livre"> 
-            <img src="image/FANTA2.jpeg" alt=""> 
-            <p> <strong>HEXED </strong> de Sarah Riens </p>
-            <span>13.500FCFA</span>
-            <h3><a href="product.html#fan1" class="plus">Voir plus</a></h3>
-        </div>
-
-
-</section>
-    
-
-    <!-- SECTION AVIS CLIENTS -->
-<section class="avis-clients">
-    <div class="avis-header">
-        <h3>Avis de nos clients</h3>
-        <p>Découvrez ce que nos lecteurs pensent de leurs achats</p>
+    <!-- ===== COUPS DE CŒUR ===== -->
+    <div class="exclu">
+        <h5>Nos coups de cœur</h5>
+        <h3>Les plus populaires</h3>
     </div>
-    
-    <div class="avis-container">
-        <div class="avis-card">
-            <div class="stars">★★★★★</div>
-            <p class="avis-texte">"J'ai adoré Captive ! Un vrai page-turner qui m'a tenue éveillée jusqu'à 3h du matin. Livraison rapide en plus !"</p>
-            <p class="avis-auteur">- Ama K.</p>
+
+    <section class="image">
+
+        <div class="livre">
+            <img src="image/téléchargement (10).jpeg" alt="Captive — Sarah Rivens">
+            <p><strong>Shattered vows</strong><br>de Shain Rose</p>
+            <span>11 500 FCFA</span>
+            <h3><a href="product.html#captive" class="plus">Voir plus</a></h3>
         </div>
-        
-        <div class="avis-card">
-            <div class="stars">★★★★★</div>
-            <p class="avis-texte">"Leonid Petrov est intense et captivant. Exactement ce que je cherchais. NovaBooks a une super sélection !"</p>
-            <p class="avis-auteur">- Marie T.</p>
+
+        <div class="livre">
+            <img src="image/Home - Ali Hazelwood.jpeg" alt="Leonid Petrov — Nanou AD">
+            <p><strong>The loove hypothesis</strong><br> Ali Hazelwood</p>
+            <span>13 500 FCFA</span>
+            <h3><a href="product.html#leonid" class="plus">Voir plus</a></h3>
         </div>
-        
-        <div class="avis-card">
-            <div class="stars">★★★★☆</div>
-            <p class="avis-texte">"Bon site, bonne qualité de livres. Le service client m'a aidée rapidement. Je recommande !"</p>
-            <p class="avis-auteur">- Fatima B.</p>
+
+        <div class="livre">
+            <img src="image/Uncovering Rose_ Special Edition Cover - A Curvy Girl Mafia Second Chance Romance (The Sinful Secrets Series).jpeg" alt="Uncovering Rose — Sinful Secrets">
+            <p><strong>Uncovering Rose</strong><br>Annie charm</p>
+            <span>12 000 FCFA</span>
+            <h3><a href="product.html#uncovering" class="plus">Voir plus</a></h3>
         </div>
-        
-        <div class="avis-card">
-            <div class="stars">★★★★★</div>
-            <p class="avis-texte">"Bordeline m'a complètement surprise. Merci NovaBooks pour cette découverte ! Emballage soigné."</p>
-            <p class="avis-auteur">- Sarah D.</p>
+
+        <div class="livre">
+            <img src="image/birth.jpeg" alt="Birthday Girl — Penelope Douglas">
+            <p><strong>Birthday Girl</strong><br>de Penelope Douglas</p>
+            <span>13 500 FCFA</span>
+            <h3><a href="product.html#birthday" class="plus">Voir plus</a></h3>
         </div>
-    </div>
-</section>
+
+        <div class="livre">
+            <img src="image/Mad Majesty.jpeg" alt="Mad Majesty — Sarah Rivens">
+            <p><strong>Mad Majesty</strong><br>Delinda  Dane</p>
+            <span>13 500 FCFA</span>
+            <h3><a href="product.html#madmajesty" class="plus">Voir plus</a></h3>
+        </div>
+
+        <div class="livre">
+            <img src="image/Wild Love NA.jpeg" alt="Wild Love — Elsie Silver">
+            <p><strong>Wild Love</strong><br>d'Elsie Silver</p>
+            <span>13 500 FCFA</span>
+            <h3><a href="product.html#wildlove" class="plus">Voir plus</a></h3>
+        </div>
+
+        <div class="livre">
+            <img src="image/The Wrong Bride _ Maura, Catharina, Jaubert, Agnès_ Amazon_fr_ Livres.jpeg" alt="The Wrong Bride — Catharina Maura">
+            <p><strong>The Wrong Bride</strong><br>de Catharina Maura</p>
+            <span>13 500 FCFA</span>
+            <h3><a href="product.html#wrongbride" class="plus">Voir plus</a></h3>
+        </div>
+
+        <div class="livre">
+            <img src="image/THR4" alt="Throttled — Lauren Asher">
+            <p><strong>Throttled</strong><br>de Lauren Asher</p>
+            <span>13 500 FCFA</span>
+            <h3><a href="product.html#throttled" class="plus">Voir plus</a></h3>
+        </div>
+
+        <div class="livre">
+            <img src="image/FANTA2.jpeg" alt="Hexed — Emily McIntire">
+            <p><strong>Hexed</strong><br>d'Emily McIntire</p>
+            <span>13 500 FCFA</span>
+            <h3><a href="product.html#hexed" class="plus">Voir plus</a></h3>
+        </div>
+
+    </section>
+
+    <!-- ===== AVIS CLIENTS ===== -->
+    <section class="avis-clients">
+        <div class="avis-header">
+            <h3>Avis de nos clients</h3>
+            <p>Découvrez ce que nos lecteurs pensent de leurs achats</p>
+        </div>
+
+        <div class="avis-container">
+            <div class="avis-card">
+                <div class="stars">★★★★★</div>
+                <p class="avis-texte">"J'ai adoré Captive ! Un vrai page-turner qui m'a tenue éveillée jusqu'à 3h du matin. Livraison rapide en plus !"</p>
+                <p class="avis-auteur">- Ama K.</p>
+            </div>
+
+            <div class="avis-card">
+                <div class="stars">★★★★★</div>
+                <p class="avis-texte">"Leonid Petrov est intense et captivant. Exactement ce que je cherchais. NovaBooks a une super sélection !"</p>
+                <p class="avis-auteur">- Marie T.</p>
+            </div>
+
+            <div class="avis-card">
+                <div class="stars">★★★★☆</div>
+                <p class="avis-texte">"Bon site, bonne qualité de livres. Le service client m'a aidée rapidement. Je recommande !"</p>
+                <p class="avis-auteur">- Fatima B.</p>
+            </div>
+
+            <div class="avis-card">
+                <div class="stars">★★★★★</div>
+                <p class="avis-texte">"Birthday Girl m'a complètement surprise. Merci NovaBooks pour cette découverte ! Emballage soigné."</p>
+                <p class="avis-auteur">- Sarah D.</p>
+            </div>
+        </div>
+    </section>
 
 </main>
 
 <footer>
 
-<section class="servive">
+    <section class="service">
+        <div class="footer1">
+            <p>Service de livraison rapide</p>
+            <h6>Partout en Côte d'Ivoire</h6>
+        </div>
 
+        <div class="footer1">
+            <p>Paiement sécurisé</p>
+            <h6>Vos données sont protégées</h6>
+        </div>
 
-    <div class= "footer1">
-    <p> Service de livraison rapide </p>
-    <h6> partout en côte d'Ivoire</h6>
-    </div>
+        <div class="footer2">
+            <p>Idée cadeaux</p>
+            <h6>Offrez un livre, offrez une émotion</h6>
+        </div>
 
-    <div class="footer1">
-    <p> Paiement sécurisé </p>
-    <h6> Vos données sont protégées </h6>
-    </div>
+        <div class="footer3">
+            <p>Un service client à votre écoute</p>
+            <h6>Une question ? Nous sommes là !</h6>
+        </div>
+    </section>
+    <!-- Bouton Service client WhatsApp -->
+<a href="https://wa.me/2250700002213?text=Bonjour%2C%20j%27ai%20une%20question"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="service-client"
+   aria-label="Contacter le service client sur WhatsApp">
+    <span class="service-icon" aria-hidden="true">💬</span>
+    <span class="service-texte">Service client</span>
+</a>
 
-
-    <div class="footer2">
-    <p> Idée cadeaux </p>
-    <h6> Offrez un livre, offrez une émotion </h6>
-    </div>
-
-
-    <div class="footer3">
-    <p> Un service client à votre écoute </p>
-    <h6> Une question? nous sommes la!  </h6>
-    </div>
-
-</section>
-
-
-    <p> Parce que chaque livre est une nouvelle aventure </p>
-    <!-- <img src="image/coeurfond.jpg" alt=""> -->
-
-    <p>2026 LibraireNova.Tous droits réservés </p>
-
+    <p>Parce que chaque livre est une nouvelle aventure</p>
+    <p>2026 NovaBooks. Tous droits réservés.</p>
+    
 </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
-
 </html>

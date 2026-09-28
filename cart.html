@@ -1,71 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mon panier — NovaBooks</title>
+    <script src="panier.js" defer></script>
+    <script src="cart.js" defer></script>
     <link rel="stylesheet" href="cart.css">
 </head>
 <body>
-<!-- je vais mettre la barre de nav -->
 
+<!-- ===== BARRE DE NAV ===== -->
 <section class="partie1">
-
     <h2>NovaBooks</h2>
     <h5>Des histoires qui restent</h5>
-
-    <nav> 
+    <nav>
         <ul>
-        <li><a href="about.html">   A propos</a></li>
-        <li><a href="products.html"> Products </a></li>
-        <li><a href="cart.html">cart</a></li>
-        <li><a href="checkout.html"> Chekout  </a></li>
-        </ul>    
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="products.html">Produits</a></li>
+            <li class="panier">
+                <a href="cart.html">🛒<span id="icon-panier"></span></a>
+            </li>
+            <li><a href="checkout.html">Checkout</a></li>
+        </ul>
     </nav>
 </section>
 
-<section class="mon-panier"> 
+<!-- ===== PANIER ===== -->
+<section class="mon-panier">
     <h2>Mon panier</h2>
-    <div id="liste-panier">
 
+    <!-- Les articles (remplis par cart.js) -->
+    <div id="liste-panier"></div>
 
-       
+    <!-- ✅ AJOUT 1 : RÉCAP + BOUTON -->
+    <div id="recapitulatif" class="recapitulatif" style="display: none;">
+        <h2>Récapitulatif</h2>
 
+        <div class="recap-ligne">
+            <span>Sous-total</span>
+            <span id="sous-total">0 FCFA</span>
+        </div>
 
-    <div id="quantity">
-        
+        <div class="recap-ligne">
+            <span>Livraison</span>
+            <span id="livraison">2 000 FCFA</span>
+        </div>
+
+        <div class="recap-ligne recap-total">
+            <span>Total</span>
+            <span id="total">0 FCFA</span>
+        </div>
+
+        <button class="btn-primaire" onclick="allerAuCheckout()">
+            Passer commande →
+        </button>
+
+        <a href="products.html" class="btn-secondaire">
+            ← Continuer mes achats
+        </a>
     </div>
-
-
-    </div>
-
-
-    
-
-
-
 </section>
 
-
-
-
+<!-- ✅ AJOUT 2 : SCRIPT DE PROTECTION -->
 <script>
-const conteneur= document.querySelector("#liste-panier");
-const quantity1=document.querySelector(".quantity");
-const monPanier =JSON.parse(localStorage.getItem("panier"));
-console.log(monPanier);
-monPanier.forEach(function(livre) {
-    conteneur.innerHTML += `<div class="item-panier">
-                            <img src="${livre.image}">
-                            <h3>${livre.nom}</h3>
-                            <p>${livre.prix}</p>
-                            <div class="quantity"><button>-</button><span>1</span><button>+</button></div>
-                            </div>`;
-                            });
+function allerAuCheckout() {
+    const currentUser = JSON.parse(localStorage.getItem('currentUser'));
 
+    if (!currentUser) {
+        localStorage.setItem('redirectAfterLogin', 'checkout.html');
+        alert('⚠️ Connectez-vous pour passer commande');
+        window.location.href = 'contact.html';
+        return;
+    }
+
+    window.location.href = 'checkout.html';
+}
 </script>
-
-
 
 </body>
 </html>

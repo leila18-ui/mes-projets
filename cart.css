@@ -1,180 +1,563 @@
-@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Qwitcher+Grypen:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mea+Culpa&display=swap');
+
+/* ===== RESET ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* STYLE DU BODY */
+/* ===== BODY ===== */
 body {
-    /* Police d'écriture */
     font-family: 'Georgia', serif;
-    
-    /* Couleur du texte */
     color: #333;
-    
-    
-    
-    /* Hauteur de ligne */
+    background-color: #f9f9f9;
     line-height: 1.6;
+    min-height: 100vh;
 }
 
-/* ===== PARTIE 1 - HEADER ===== */
-
-/* SECTION PARTIE 1 (Header) */
-section.partie1 {
-    /* Couleur de fond noir */
+/* =========================================
+   HEADER (partie1)
+   ========================================= */
+.partie1 {
     background-color: #0f0f0f;
-    
-    /* Espacement intérieur */
     padding: 15px 40px;
-    
-    /* Position sticky */
     position: sticky;
     top: 0;
     z-index: 100;
-    
-    /* Ombre pour séparation */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    
-    /* Affichage flex */
     display: flex;
-    
-    /* Aligner verticalement */
     align-items: center;
-    
-    /* Espace entre logo et nav */
     justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-/* LOGO - TITRE h2 */
-section.partie1 h2 {
-    /* Couleur rose/rose clair */
+.partie1 h2 {
     color: #ff6b9d;
-    
-    /* Taille grande */
     font-size: 30px;
-    
-    /* Poids */
     font-weight: lighter;
-    
-    /* Espacement */
-    margin-right: 30px;
 }
 
-/* SOUS-TITRE h5 (tagline) */
-section.partie1 h5 {
-    /* Couleur grise */
-    color:#ff6b9d;
-    
-    /* Taille petite */
-    font-size: 11px;
-    
-    /* Lettres majuscules */
-    text-transform: uppercase;
-    
-    /* Espacement entre lettres */
-    letter-spacing: 2px;
-}
-
-/* NAVIGATION */
-nav {
-    /* Affichage flex */
-    display: flex;
-    
-    /* Aligner au centre */
-    align-items: center;
-    
-    /* Espace entre éléments */
-    gap: 40px;
-}
-
-/* LISTE DE NAVIGATION */
-nav ul {
-    /* Affichage en ligne */
-    display: flex;
-    
-    /* Aligner verticalement */
-    align-items: center;
-    
-    /* Enlever les puces */
-    list-style: none;
-    
-    /* Espace entre les liens */
-    gap: 30px;
-}
-
-/* LIENS DE NAVIGATION */
-nav a {
-    /* Couleur blanche */
-    color: white;
-    
-    /* Enlever la décoration */
+.partie1 h2 a {
+    color: #ff6b9d;
     text-decoration: none;
-    
-    /* Taille */
-    font-size: 15px;
-    
-    /* Transition smooth */
     transition: color 0.3s ease;
 }
 
-/* EFFET HOVER SUR LES LIENS */
+.partie1 h2 a:hover {
+    color: #ff8fb3;
+}
+
+.partie1 h5 {
+    color: #ff6b9d;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
 nav a:hover {
-    /* Couleur rose */
     color: #ff6b9d;
 }
 
-.item-panier {
+.panier {
+    position: relative;
+}
+
+#icon-panier {
+    position: absolute;
+    top: -10px;
+    right: -12px;
+    background-color: pink;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
-    gap: 15px;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* =========================================
+   PANIER
+   ========================================= */
+.mon-panier {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.mon-panier h2 {
+    margin-bottom: 30px;
+    color: #1a1a1a;
+    font-size: 32px;
+    text-align: center;
+    font-family: "Mea Culpa", cursive;
+    font-weight: 400;
+}
+
+#liste-panier {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ===== CHAQUE ARTICLE ===== */
+.item-panier {
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.item-panier:hover {
+    box-shadow: 0 6px 20px rgba(255, 107, 157, 0.15);
+    transform: translateY(-2px);
 }
 
 .item-panier img {
-    width: 80px;
-    height: 100px;
+    width: 110px;
+    height: 140px;
     object-fit: cover;
-    border-radius: 4px;
+    border-radius: 8px;
+    flex-shrink: 0;
 }
 
 .item-panier h3 {
-    font-size: 16px;
-    margin: 0;
+    font-size: 17px;
+    color: #1a1a1a;
+    margin-bottom: 6px;
+    font-weight: 700;
+    line-height: 1.3;
 }
 
 .item-panier p {
-    font-weight: bold;
-    margin-left: auto;
+    color: #888;
+    font-size: 13px;
+    margin-bottom: 4px;
+    line-height: 1.5;
 }
 
+/* Le prix mis en valeur */
+.item-panier p:nth-of-type(4) {
+    color: #ff6b9d;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
 
+/* ===== QUANTITÉ ===== */
 .quantity {
     display: flex;
+    gap: 8px;
     align-items: center;
-    gap: 15px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
 }
 
 .quantity button {
-    width: 35px;
-    height: 35px;
-    border: 1px solid #ccc;
-    background-color: white;
-    font-size: 20px;
+    background: #ff6b9d;
+    color: white;
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.quantity button:hover {
+    background: #e55a8a;
+    transform: scale(1.1);
 }
 
 .quantity span {
-    font-size: 18px;
+    font-weight: bold;
+    font-size: 16px;
+    min-width: 26px;
+    text-align: center;
+    color: #1a1a1a;
+}
+
+/* ===== BOUTON SUPPRIMER ===== */
+.btn-sup {
+    background: transparent;
+    color: #ff6b9d;
+    border: 1px solid #ff6b9d;
+    padding: 8px 14px;
+    border-radius: 20px;
+    cursor: pointer;
+    align-self: flex-start;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.btn-sup:hover {
+    background: #ff6b9d;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(255, 107, 157, 0.3);
+}
+
+/* =========================================
+   RÉCAPITULATIF
+   ========================================= */
+.recapitulatif {
+    background: white;
+    border: 2px solid #ff6b9d;
+    border-radius: 12px;
+    padding: 25px;
+    margin-top: 30px;
+    box-shadow: 0 4px 15px rgba(255, 107, 157, 0.15);
+}
+
+.recapitulatif h2 {
+    font-family: "Mea Culpa", cursive;
+    font-size: 28px;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    font-weight: 400;
+}
+
+.recap-ligne {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-size: 15px;
+    color: #555;
+}
+
+.recap-ligne span:last-child {
+    font-weight: 600;
+    color: #333;
+}
+
+.recap-total {
+    border-top: 1px solid #eee;
+    margin-top: 10px;
+    padding-top: 15px;
+    font-size: 20px;
+    color: #1a1a1a;
     font-weight: bold;
 }
 
+.recap-total span:last-child {
+    color: #ff6b9d;
+    font-size: 22px;
+}
 
+/* =========================================
+   BOUTONS
+   ========================================= */
+.btn-primaire {
+    display: block;
+    width: 100%;
+    background: linear-gradient(135deg, #ff6b9d 0%, #d86d91 100%);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Georgia', serif;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+}
 
+.btn-primaire:hover {
+    background: linear-gradient(135deg, #e55a8a 0%, #c15a7d 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 107, 157, 0.4);
+}
 
+.btn-primaire:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 12px rgba(255, 107, 157, 0.3);
+}
 
+.btn-secondaire {
+    display: block;
+    text-align: center;
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 15px;
+    transition: color 0.2s ease;
+}
+
+.btn-secondaire:hover {
+    color: #ff6b9d;
+}
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+@media (max-width: 1024px) {
+    .partie1 {
+        padding: 12px 25px;
+    }
+
+    .partie1 h2 {
+        font-size: 26px;
+    }
+
+    nav ul {
+        gap: 22px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .partie1 {
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px 15px;
+        text-align: center;
+    }
+
+    .partie1 h2 {
+        font-size: 24px;
+    }
+
+    .partie1 h5 {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav ul {
+        gap: 15px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .mon-panier {
+        padding: 25px 15px;
+    }
+
+    .mon-panier h2 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .item-panier {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 18px;
+        gap: 12px;
+    }
+
+    .item-panier img {
+        width: 130px;
+        height: 170px;
+    }
+
+    .item-panier h3 {
+        font-size: 15px;
+    }
+
+    .item-panier p {
+        font-size: 12px;
+    }
+
+    .quantity {
+        justify-content: center;
+    }
+
+    .btn-sup {
+        align-self: center;
+    }
+
+    .recapitulatif {
+        padding: 20px;
+    }
+
+    .recapitulatif h2 {
+        font-size: 24px;
+    }
+
+    .recap-total {
+        font-size: 18px;
+    }
+
+    .recap-total span:last-child {
+        font-size: 20px;
+    }
+
+    .btn-primaire {
+        font-size: 15px;
+        padding: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .partie1 {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .partie1 h2 {
+        font-size: 20px;
+    }
+
+    .partie1 h5 {
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    #icon-panier {
+        width: 16px;
+        height: 16px;
+        font-size: 9px;
+        top: -8px;
+        right: -10px;
+    }
+
+    .mon-panier {
+        padding: 20px 12px;
+    }
+
+    .mon-panier h2 {
+        font-size: 22px;
+    }
+
+    .item-panier {
+        padding: 12px;
+        gap: 10px;
+    }
+
+    .item-panier img {
+        width: 100px;
+        height: 130px;
+    }
+
+    .item-panier h3 {
+        font-size: 14px;
+    }
+
+    .item-panier p {
+        font-size: 11px;
+    }
+
+    .item-panier p:nth-of-type(4) {
+        font-size: 14px;
+    }
+
+    .quantity button {
+        width: 28px;
+        height: 28px;
+        font-size: 14px;
+    }
+
+    .quantity span {
+        font-size: 14px;
+    }
+
+    .btn-sup {
+        font-size: 11px;
+        padding: 6px 12px;
+    }
+
+    .recapitulatif {
+        padding: 18px;
+    }
+
+    .recap-ligne {
+        font-size: 14px;
+    }
+
+    .recap-total {
+        font-size: 17px;
+    }
+
+    .recap-total span:last-child {
+        font-size: 19px;
+    }
+
+    .btn-primaire {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .btn-secondaire {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 360px) {
+    .partie1 h2 {
+        font-size: 18px;
+    }
+
+    nav a {
+        font-size: 11px;
+    }
+
+    .mon-panier h2 {
+        font-size: 20px;
+    }
+
+    .item-panier h3 {
+        font-size: 13px;
+    }
+
+    .item-panier img {
+        width: 90px;
+        height: 115px;
+    }
+}
