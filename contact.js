@@ -19,8 +19,8 @@ function saveCurrentUser(email) {
 // ===== RÉCUPÉRATION DES ÉLÉMENTS HTML =====
 
 const form = document.querySelector('form');
-const inputEmail = form ? form.querySelector('input[name="nom"]') : null;
-const inputPassword = form ? form.querySelector('input[name="Adresse"]') : null;
+const inputEmail = form ? form.querySelector('input[name="email"]') : null;
+const inputPassword = form ? form.querySelector('input[name="password"]') : null;
 const checkboxRemember = form ? form.querySelector('input[name="souvenir"]') : null;
 const linkCreateAccount = document.querySelector('a.comp');
 const linkForgotPassword = document.querySelector('a.mdp');
@@ -54,7 +54,7 @@ function register(email, password, passwordConfirm) {
     
     alert('✅ Inscription réussie ! Connectez-vous maintenant.');
     
-    // Vider les champs et revenir au login
+   // Vider les champs et revenir au login
     if (form) {
         form.reset();
     }
@@ -99,9 +99,9 @@ function switchToLogin() {
         form.innerHTML = `
             <h2>Connexion</h2>
             <h2>mail</h2>
-            <input type="text" name="nom" placeholder=" ----  "> <br>
+            <input type="text" name="email" placeholder=" example@gmail.com  "> <br>
             <h2>mot de passe</h2>
-            <input type="password" name="Adresse" placeholder=" ---- "> <br>
+            <input type="password" name="password" placeholder=" 0000 "> <br>
             
             <div class="souvenir">
             <label>
@@ -157,8 +157,8 @@ function attachLoginEvents() {
         form.addEventListener('submit', function(e) {
             e.preventDefault();
             
-            const email = form.querySelector('input[name="nom"]').value.trim();
-            const password = form.querySelector('input[name="Adresse"]').value.trim();
+            const email = form.querySelector('input[name="email"]').value.trim();
+            const password = form.querySelector('input[name="password"]').value.trim();
             const remember = form.querySelector('input[name="souvenir"]').checked;
             
             login(email, password, remember);
@@ -220,3 +220,7 @@ window.addEventListener('load', function() {
     
     console.log('✅ succes.js chargé avec succès');
 });
+
+
+
+
